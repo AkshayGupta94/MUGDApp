@@ -1,0 +1,1 @@
+c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\MUGDApp.WindowsPhone.csproj;neutral

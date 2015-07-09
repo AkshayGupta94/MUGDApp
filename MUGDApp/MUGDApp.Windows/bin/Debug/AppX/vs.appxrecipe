@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>AXE-WORK</Machine>
+    <WindowsUser>Akshay</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>49444AxeJulius.MugdAPP</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>BBBABC95AF962417EFCFF11FEAF1AA2F9D33D475AE3CAC19A403CF2452137711</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>49444AxeJulius.MugdAPP_1.0.0.0_neutral__2nh7c0d2m2w4p</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>49444AxeJulius.MugdAPP_2nh7c0d2m2w4p!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>49444AxeJulius.MugdAPP</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=EE61FA12-8AB0-48AE-AB5C-1AEEF089B9B9</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T18:57:21.543</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.exe">
+      <PackagePath>MUGDApp.Windows.exe</PackagePath>
+      <Modified>2015-07-09T18:57:20.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
+      <Modified>2015-07-09T18:56:26.515</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
+      <Modified>2015-07-09T18:56:26.526</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-07-09T18:56:24.080</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+      <Modified>2015-07-09T18:56:26.279</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+      <Modified>2015-07-09T18:56:26.292</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T05:25:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T05:25:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T05:25:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T05:25:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-07-09T18:57:20.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-07-09T18:57:20.555</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.xr.xml">
+      <PackagePath>MUGDApp.Windows.xr.xml</PackagePath>
+      <Modified>2015-07-09T18:57:20.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-07-09T18:57:21.224</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
