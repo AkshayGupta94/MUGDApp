@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -31,6 +32,11 @@ public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient Mugd_app
 "https://mugd-app.azure-mobile.net/",
 "EEkrmAJgegNSaCsgIaRQDTAmbAqZRZ90");
 #endif
+        public static MobileServiceClient MobileService = new MobileServiceClient(
+    "https://mugd-app.azure-mobile.net/",
+    "EEkrmAJgegNSaCsgIaRQDTAmbAqZRZ90"
+);
+
 
 #if WINDOWS_APP
         // http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409

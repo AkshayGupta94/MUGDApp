@@ -9,7 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <ListView x:Name="test" DataContext="{Binding}">
+            <ListView.ItemTemplate>
+            <DataTemplate>
+                
+                <Image  Width="auto" Height="auto" Source="{Binding bitmapImage}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>
 
