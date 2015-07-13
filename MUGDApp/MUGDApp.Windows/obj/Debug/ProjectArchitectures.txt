@@ -1,1 +1,1 @@
-c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\MUGDApp.Windows.csproj;neutral
+C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Windows\MUGDApp.Windows.csproj;neutral

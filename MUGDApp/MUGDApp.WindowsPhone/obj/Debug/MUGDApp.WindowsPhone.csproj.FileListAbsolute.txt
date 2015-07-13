@@ -46,11 +46,3 @@ c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.Wi
 c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\akshay\documents\visual studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\ProjectArchitectures.txt
-C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles
-C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles.intermediate
-C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles
-C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles.intermediate
-C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles
-C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles.intermediate
-C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml
-C:\Users\Akshay\Documents\Visual Studio 2013\Projects\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml.intermediate
