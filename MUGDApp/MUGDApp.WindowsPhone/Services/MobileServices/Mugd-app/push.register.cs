@@ -13,13 +13,13 @@ namespace MUGDApp
 {
     internal class Mugd_appPush
     {
-        public async static void UploadChannel()
+        public  static void UploadChannel()
         {
-            var channel = await Windows.Networking.PushNotifications.PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+           // var channel = await Windows.Networking.PushNotifications.PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
 
             try
             {
-                await App.Mugd_appClient.GetPush().RegisterNativeAsync(channel.Uri);    
+                //await App.Mugd_appClient.GetPush().RegisterNativeAsync(channel.Uri);    
                 //await App.Mugd_appClient.InvokeApiAsync("notifyAllUsers",
                 //    new JObject(new JProperty("toast", "Sample Toast")));
             }

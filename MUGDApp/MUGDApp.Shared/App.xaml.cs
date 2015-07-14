@@ -27,6 +27,9 @@ namespace MUGDApp
     /// </summary>
     public sealed partial class App : Application
     {
+
+       
+        
 #if WINDOWS_PHONE_APP
 // http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409
 public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient Mugd_appClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
@@ -45,7 +48,7 @@ public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient Mugd_app
         "https://mugd-app.azure-mobile.net/",
         "EEkrmAJgegNSaCsgIaRQDTAmbAqZRZ90");
 #endif
-        public static PushNotificationChannel CurrentChannel { get; private set; }
+        //public static PushNotificationChannel CurrentChannel { get; private set; }
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
@@ -57,6 +60,8 @@ public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient Mugd_app
         public App()
         {
             this.InitializeComponent();
+
+
             this.Suspending += this.OnSuspending;
         }
 
@@ -66,7 +71,7 @@ public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient Mugd_app
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected async override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
@@ -133,14 +138,17 @@ public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient Mugd_app
 MUGDApp.Mugd_appPush.UploadChannel();
 #endif
 
-            CurrentChannel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
-            CurrentChannel.PushNotificationReceived += CurrentChannel_PushNotificationReceived;
+            //CurrentChannel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+            
+        
 
 
         }
 
         void CurrentChannel_PushNotificationReceived(PushNotificationChannel sender, PushNotificationReceivedEventArgs args)
         {
+
+
 
         }
 
