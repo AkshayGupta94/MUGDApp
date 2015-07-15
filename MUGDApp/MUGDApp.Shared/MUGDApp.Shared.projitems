@@ -18,4 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ChatPublic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Events.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg" />
+  </ItemGroup>
 </Project>

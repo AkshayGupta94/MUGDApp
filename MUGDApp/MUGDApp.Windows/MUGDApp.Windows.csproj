@@ -111,6 +111,9 @@
     <Compile Include="Services\MobileServices\Mugd-app\push.register.cs">
       <ConnectedServiceReference>Mugd-app</ConnectedServiceReference>
     </Compile>
+    <Compile Include="Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -129,6 +132,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Start.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

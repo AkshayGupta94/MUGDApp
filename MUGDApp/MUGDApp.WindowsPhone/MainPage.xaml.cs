@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Networking.PushNotifications;
+using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -36,6 +37,7 @@ namespace MUGDApp
             this.InitializeComponent();
             Loaded += MainPage_Loaded;
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
         /// <summary>
@@ -70,6 +72,11 @@ namespace MUGDApp
             }
         }
 
+         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+         {
+             Frame.GoBack();
+             e.Handled = true;
+         }
         void test_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
         {
             lol.ItemsSource = test;
@@ -106,17 +113,23 @@ namespace MUGDApp
         }
         private async void Send_Click(object sender, RoutedEventArgs e)
         {
-            ChatPublic c = new ChatPublic();
-            c.Name = "Test";
-            c.Message = message.Text;
-            c.CreatedAt = DateTime.Today;
-            await App.MobileService.GetTable<ChatPublic>().InsertAsync(c);
+            if (message.Text !="")
+            {
+                ChatPublic c = new ChatPublic();
+                c.Name = "Test";
+                c.Message = message.Text;
+                message.Text = "";
+                c.CreatedAt = DateTime.Today;
+                await App.MobileService.GetTable<ChatPublic>().InsertAsync(c);
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             
         }
+
+       
             //BitmapImage bitmapImage = new BitmapImage();
             //Uri uri = new Uri(hi[14].ImageUri);
             //bitmapImage.UriSource = uri;
