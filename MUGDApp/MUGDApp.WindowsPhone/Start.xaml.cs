@@ -38,7 +38,7 @@ namespace MUGDApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(Login));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

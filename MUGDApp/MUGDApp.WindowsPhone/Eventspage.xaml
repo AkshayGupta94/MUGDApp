@@ -10,18 +10,8 @@
 
     <Grid Margin="0,15.333,0,-0.333">
         <Grid.Background>
-            <ImageBrush ImageSource="geometricupcomingevents.jpg" Opacity="0.75"/>
+            <ImageBrush ImageSource="event.jpg" Opacity="0.6"/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="35.438,28.657,0,0" TextWrapping="Wrap" Text="And Her are Your Events" VerticalAlignment="Top" Height="78" Width="347" FontSize="24" FontFamily="Lucida Fax" FontStyle="Italic" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
-            <TextBlock.RenderTransform>
-                <CompositeTransform Rotation="0.753"/>
-            </TextBlock.RenderTransform>
-            <TextBlock.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FFEA4141" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBlock.Foreground>
-        </TextBlock>
+        
     </Grid>
 </Page>
