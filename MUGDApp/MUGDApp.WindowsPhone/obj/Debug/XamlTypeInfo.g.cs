@@ -59,18 +59,6 @@ namespace MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType;
-            if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
-            {
-                global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
-                if (libXamlType != null)
-                {
-                    if(libXamlType.IsConstructible || xamlType == null)
-                    {
-                        xamlType = libXamlType;
-                    }
-                }
-            }
             if (xamlType != null)
             {
                 _xamlTypeCacheByName.Add(xamlType.FullName, xamlType);
@@ -94,18 +82,6 @@ namespace MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo
             if(typeIndex != -1)
             {
                 xamlType = CreateXamlType(typeIndex);
-            }
-            var userXamlType = xamlType as global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType;
-            if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
-            {
-                global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
-                if (libXamlType != null)
-                {
-                    if(libXamlType.IsConstructible || xamlType == null)
-                    {
-                        xamlType = libXamlType;
-                    }
-                }
             }
             if (xamlType != null)
             {
@@ -148,21 +124,27 @@ namespace MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
-            _typeNameTable[0] = "MUGDApp.Eventspage";
+            _typeNameTable = new string[9];
+            _typeNameTable[0] = "MUGDApp.eventDetailxaml";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "MUGDApp.Login";
-            _typeNameTable[4] = "MUGDApp.MainPage";
-            _typeNameTable[5] = "MUGDApp.Start";
+            _typeNameTable[3] = "MUGDApp.Eventspage";
+            _typeNameTable[4] = "MUGDApp.Login";
+            _typeNameTable[5] = "MUGDApp.MainPage";
+            _typeNameTable[6] = "MUGDApp.Start";
+            _typeNameTable[7] = "MUGDApp.idea";
+            _typeNameTable[8] = "MUGDApp.loginMember";
 
-            _typeTable = new global::System.Type[6];
-            _typeTable[0] = typeof(global::MUGDApp.Eventspage);
+            _typeTable = new global::System.Type[9];
+            _typeTable[0] = typeof(global::MUGDApp.eventDetailxaml);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::MUGDApp.Login);
-            _typeTable[4] = typeof(global::MUGDApp.MainPage);
-            _typeTable[5] = typeof(global::MUGDApp.Start);
+            _typeTable[3] = typeof(global::MUGDApp.Eventspage);
+            _typeTable[4] = typeof(global::MUGDApp.Login);
+            _typeTable[5] = typeof(global::MUGDApp.MainPage);
+            _typeTable[6] = typeof(global::MUGDApp.Start);
+            _typeTable[7] = typeof(global::MUGDApp.idea);
+            _typeTable[8] = typeof(global::MUGDApp.loginMember);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -197,10 +179,13 @@ namespace MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_Eventspage() { return new global::MUGDApp.Eventspage(); }
-        private object Activate_3_Login() { return new global::MUGDApp.Login(); }
-        private object Activate_4_MainPage() { return new global::MUGDApp.MainPage(); }
-        private object Activate_5_Start() { return new global::MUGDApp.Start(); }
+        private object Activate_0_eventDetailxaml() { return new global::MUGDApp.eventDetailxaml(); }
+        private object Activate_3_Eventspage() { return new global::MUGDApp.Eventspage(); }
+        private object Activate_4_Login() { return new global::MUGDApp.Login(); }
+        private object Activate_5_MainPage() { return new global::MUGDApp.MainPage(); }
+        private object Activate_6_Start() { return new global::MUGDApp.Start(); }
+        private object Activate_7_idea() { return new global::MUGDApp.idea(); }
+        private object Activate_8_loginMember() { return new global::MUGDApp.loginMember(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -212,9 +197,9 @@ namespace MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  MUGDApp.Eventspage
+            case 0:   //  MUGDApp.eventDetailxaml
                 userType = new global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_Eventspage;
+                userType.Activator = Activate_0_eventDetailxaml;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -227,23 +212,44 @@ namespace MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo
                 xamlType = new global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  MUGDApp.Login
+            case 3:   //  MUGDApp.Eventspage
                 userType = new global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Login;
+                userType.Activator = Activate_3_Eventspage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  MUGDApp.MainPage
+            case 4:   //  MUGDApp.Login
                 userType = new global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_Login;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  MUGDApp.Start
+            case 5:   //  MUGDApp.MainPage
                 userType = new global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Start;
+                userType.Activator = Activate_5_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  MUGDApp.Start
+                userType = new global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_Start;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  MUGDApp.idea
+                userType = new global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_idea;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  MUGDApp.loginMember
+                userType = new global::MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_loginMember;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -251,97 +257,6 @@ namespace MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo
             return xamlType;
         }
 
-        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> _otherProviders;
-        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> OtherProviders
-        {
-            get
-            {
-                if(_otherProviders == null)
-                {
-                    _otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
-                    global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
-                    provider = new global::Syncfusion.SfAccordion.WP.Syncfusion_SfAccordion_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.UI.Xaml.Controls.Barcode.Syncfusion_SfBarcode_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.UI.Xaml.BulletGraph.Syncfusion_SfBulletGraph_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfBusyIndicator.WP.Syncfusion_SfBusyIndicator_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfCarousel.WP.Syncfusion_SfCarousel_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.UI.Xaml.Charts.Syncfusion_SfChart_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfColorPickers.WP.Syncfusion_SfColorPickers_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.UI.Xaml.Gauges.Syncfusion_SfGauge_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.UI.Xaml.Grid.Syncfusion_SfGrid_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfHubTile.WP.Syncfusion_SfHubTile_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfInput.WP.Syncfusion_SfInput_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfMaps.WP.Syncfusion_SfMaps_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfRadialMenu.WP.Syncfusion_SfRadialMenu_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfRichTextBoxAdv.WP.Syncfusion_SfRichTextBoxAdv_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.UI.Xaml.Schedule.Syncfusion_SfSchedule_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfShared.WP.Syncfusion_SfShared_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfTabControl.WP.Syncfusion_SfTabControl_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfTileView.WP.Syncfusion_SfTileView_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfTreeMap.WP.Syncfusion_SfTreeMap_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                    provider = new global::Syncfusion.SfTreeNavigator.WP.Syncfusion_SfTreeNavigator_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    _otherProviders.Add(provider); 
-                }
-                return _otherProviders;
-            }
-        }
-
-        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForName(string typeName)
-        {
-            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
-            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
-            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
-            {
-                xamlType = xmp.GetXamlType(typeName);
-                if(xamlType != null)
-                {
-                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
-                    {
-                        return xamlType;
-                    }
-                    foundXamlType = xamlType;
-                }
-            }
-            return foundXamlType;
-        }
-
-        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForType(global::System.Type type)
-        {
-            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
-            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
-            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
-            {
-                xamlType = xmp.GetXamlType(type);
-                if(xamlType != null)
-                {
-                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
-                    {
-                        return xamlType;
-                    }
-                    foundXamlType = xamlType;
-                }
-            }
-            return foundXamlType;
-        }
 
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)

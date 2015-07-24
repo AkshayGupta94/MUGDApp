@@ -53,11 +53,20 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\garv\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg">
-      <PackagePath>ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\garv\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\area51.jpg">
+      <PackagePath>Pics\area51.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\garv\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg">
+      <PackagePath>Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garv\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\garv\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\idea.xbf">
+      <PackagePath>idea.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\garv\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\loginMember.xbf">
+      <PackagePath>loginMember.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garv\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
