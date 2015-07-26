@@ -17,10 +17,6 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ChatPublic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Events.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)fbLogin.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)idea.xaml.cs">
-      <DependentUpon>idea.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)loginMember.xaml.cs">
       <DependentUpon>loginMember.xaml</DependentUpon>
     </Compile>
@@ -30,10 +26,6 @@
     <Content Include="$(MSBuildThisFileDirectory)Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)idea.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="$(MSBuildThisFileDirectory)loginMember.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

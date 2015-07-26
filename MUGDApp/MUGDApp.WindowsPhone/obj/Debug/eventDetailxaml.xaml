@@ -1,0 +1,39 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MUGDApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="MUGDApp.eventDetailxaml"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot Title="{Binding}">
+            <PivotItem Header="About">
+                <GridView x:Name="aboutc" >
+                    <Image Height="200" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding}"/>
+                    <TextBlock TextWrapping="Wrap" Text="TextBlock" DataContext="{Binding}"/>
+
+                </GridView>
+            </PivotItem>
+            <PivotItem Header="Venue" >
+                <GridView x:Name="venuec">
+                    <TextBlock TextWrapping="Wrap" DataContext="{Binding}" Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+
+                    <Maps:MapControl Height="231" Width="324" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+
+
+                </GridView>
+            </PivotItem>
+            <PivotItem Header="Contact Detail" >
+
+                <TextBlock HorizontalAlignment="Center" Width="250" Height="250" TextWrapping="Wrap" DataContext="{Binding}" VerticalAlignment="Center"/>
+
+            </PivotItem>
+        </Pivot>
+
+    </Grid>
+</Page>
+

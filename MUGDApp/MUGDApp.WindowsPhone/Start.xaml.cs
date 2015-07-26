@@ -41,7 +41,7 @@ namespace MUGDApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Login));
+            //this.Frame.Navigate(typeof(Login));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -50,7 +50,7 @@ namespace MUGDApp
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(idea));
+            //this.Frame.Navigate(typeof(idea));
         }
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {

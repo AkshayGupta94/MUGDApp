@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,6 +24,9 @@ namespace MUGDApp
     /// </summary>
     public sealed partial class Eventspage : Page
     {
+        private IMobileServiceTable<Events> Table = App.MobileService.GetTable<Events>();
+        private MobileServiceCollection<Events, Events> items;
+
         public Eventspage()
         {
             this.InitializeComponent();
@@ -34,9 +38,16 @@ namespace MUGDApp
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            Events ob = new Events();
+            List<Events> ob = new List<Events>();
+            items = await Table.ToCollectionAsync();
+            foreach (Events erg in items)
+            {
+                Events f = new Events();
+                f.Desc = erg.Desc;
+                ob.Add(f);
+            }
             listEvent.ItemsSource = ob;    //list view data
         }
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
@@ -52,7 +63,18 @@ namespace MUGDApp
 
         private void eventGrid_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(eventDetailxaml),e);
+           
+        }
+
+        private void eventGrid_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+           
+        }
+
+        private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Events a = listEvent.SelectedItem as Events;
+            Frame.Navigate(typeof(eventDetailxaml), a);
         }
         
     }
