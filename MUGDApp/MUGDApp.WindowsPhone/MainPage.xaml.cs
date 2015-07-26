@@ -74,7 +74,10 @@ namespace MUGDApp
 
          private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
          {
-             Frame.GoBack();
+             if (Frame.CanGoBack)
+                 Frame.GoBack();
+             else
+                 Frame.Navigate(typeof(Start));
              e.Handled = true;
          }
         void test_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)

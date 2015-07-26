@@ -36,11 +36,24 @@ namespace MUGDApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            Events ob = new Events();
+            listEvent.ItemsSource = ob;    //list view data
         }
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
         {
-            Frame.GoBack();
-            e.Handled = true;
+            if (Frame.CanGoBack)
+                Frame.GoBack();
+            else
+            {
+                Frame.Navigate(typeof(Start));
+            }
+                e.Handled = true;
         }
+
+        private void eventGrid_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(eventDetailxaml),e);
+        }
+        
     }
 }

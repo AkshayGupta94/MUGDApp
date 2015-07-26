@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\akshay\documents\visual studio 2013\projects\mugdapp\mugdapp\mugdapp.windows\obj\debug\intermediatexaml\mugdapp.windows.exe" HashGuid="bcf0b0b8-8145-4861-5274-3255c37c8f88" />
+    <LocalAssembly PathName="c:\users\garv\source\repos\mugdapp\mugdapp\mugdapp.windows\obj\debug\intermediatexaml\mugdapp.windows.exe" HashGuid="ef29876c-4850-2231-b1fb-32b5367fe9d2" />
     <ReferenceAssembly PathName="c:\users\garv\source\repos\mugdapp\packages\windowsazure.mobileservices.1.2.5\lib\netcore45\microsoft.windowsazure.mobile.dll" HashGuid="e2805223-ada5-1529-dd20-9739fab12f68" />
     <ReferenceAssembly PathName="c:\users\garv\source\repos\mugdapp\packages\windowsazure.mobileservices.1.2.5\lib\netcore45\microsoft.windowsazure.mobile.ext.dll" HashGuid="c3fe55d4-dcfc-ac07-236d-f429b050553a" />
     <ReferenceAssembly PathName="c:\users\garv\source\repos\mugdapp\packages\newtonsoft.json.6.0.4\lib\netcore45\newtonsoft.json.dll" HashGuid="21d6fdf9-5b56-582d-4524-cf342594819a" />
