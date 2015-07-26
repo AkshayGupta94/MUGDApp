@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-26T12:25:58.647</Modified>
+      <Modified>2015-07-26T13:15:56.199</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.exe">
       <PackagePath>MUGDApp.Windows.exe</PackagePath>
-      <Modified>2015-07-26T12:32:16.825</Modified>
+      <Modified>2015-07-26T13:16:28.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
@@ -72,6 +72,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-03-14T05:25:28.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Event.png">
+      <PackagePath>Pics\Event.png</PackagePath>
+      <Modified>2015-07-26T12:47:08.487</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\area51.jpg">
       <PackagePath>Pics\area51.jpg</PackagePath>
       <Modified>2015-07-26T10:38:19.434</Modified>
@@ -86,7 +90,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\loginMember.xbf">
       <PackagePath>loginMember.xbf</PackagePath>
-      <Modified>2015-07-26T12:25:50.486</Modified>
+      <Modified>2015-07-26T13:15:55.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
@@ -98,7 +102,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.xr.xml">
       <PackagePath>MUGDApp.Windows.xr.xml</PackagePath>
-      <Modified>2015-07-26T12:32:16.594</Modified>
+      <Modified>2015-07-26T13:15:55.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
       <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
@@ -218,7 +222,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-26T12:31:13.618</Modified>
+      <Modified>2015-07-26T13:15:55.692</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

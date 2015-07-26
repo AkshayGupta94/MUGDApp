@@ -53,6 +53,9 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Event.png">
+      <PackagePath>Pics\Event.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\area51.jpg">
       <PackagePath>Pics\area51.jpg</PackagePath>
     </AppxPackagedFile>

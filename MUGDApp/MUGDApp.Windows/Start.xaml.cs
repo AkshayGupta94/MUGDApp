@@ -39,7 +39,7 @@ namespace MUGDApp
             temp.back = "Red";
             temp.name = "Register";
             temp.src = "/Assets/Plus.png";
-            temp.title = "Add new member";
+            temp.title = "Register";
             temp.desc = "Use this option to add new members to the group, This is similar to registeration and will not generate any user id and passwords";
             myList.Add(temp);
             temp = new datamodel();
@@ -85,7 +85,7 @@ namespace MUGDApp
             datamodel lolol = e.ClickedItem as datamodel;
             if (lolol.title == "Register")
             {
-                Frame.Navigate(typeof(MainPage));
+                Frame.Navigate(typeof(loginMember));
             }
             else if (lolol.title == "Delete user")
             {
