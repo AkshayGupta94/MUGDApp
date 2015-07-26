@@ -90,7 +90,6 @@
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
       <RootProperty Name="Stretch" />
       <RootProperty Name="ImageSource" />
-      <RootProperty Name="AlignmentY" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="HorizontalAlignment" />
@@ -100,6 +99,7 @@
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Opacity" />
       <RootProperty Name="Background" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
@@ -123,10 +123,11 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
+      <RootProperty Name="PlaceholderText" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="BorderBrush" />
+      <RootEvent Name="GotFocus" />
     </RootType>
     <RootType FullName="MUGDApp.Eventspage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -174,11 +175,12 @@
     </RootType>
     <RootType FullName="MUGDApp.Start" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="PlaceholderText" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootEvent Name="GotFocus" />
     </RootType>
     <RootType FullName="MUGDApp.loginMember" />
   </Roots.RootTypes>

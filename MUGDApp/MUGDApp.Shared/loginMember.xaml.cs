@@ -31,5 +31,15 @@ namespace MUGDApp
         {
 
         }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            UserId.Header = "User Id";
+        }
+
+        private void PasswordBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Password.Header = "Password";
+        }
     }
 }

@@ -6,15 +6,26 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="399.999969482422">
-        <Grid.Background>
-            <ImageBrush Stretch="Uniform" AlignmentY="Top" ImageSource="Pics/area51.jpg"/>
-        </Grid.Background>
-        <TextBox HorizontalAlignment="Left" TextAlignment="Center" Margin="10,402,0,0" TextWrapping="Wrap" Text="User Id" VerticalAlignment="Top" Width="104" Background="#FF040404" Foreground="#FFF9F5F5" BorderBrush="Black"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,482,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Background="Black" BorderBrush="Black" Foreground="White"/>
-        <TextBox HorizontalAlignment="Left" Margin="133,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="133,482,0,0" VerticalAlignment="Top" Height="39" Width="236"/>
-        <Button Content="Validate" HorizontalContentAlignment="Center"  HorizontalAlignment="Center" Margin="112,559,112,0" VerticalAlignment="Top" Width="172" Click="Button_Click" BorderBrush="Red"/>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.55*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+
+        </Grid.ColumnDefinitions>
+        
+            <Image Stretch="Uniform" Grid.ColumnSpan="2"  Source="Pics/area51.jpg"/>
+      
+        <!--<TextBox Grid.Row="1" HorizontalAlignment="Center"  TextAlignment="Center"  TextWrapping="Wrap" Text="User Id" VerticalAlignment="Top" Width="auto" Background="#FF040404" Foreground="#FFF9F5F5" BorderBrush="Black"/>-->
+        <!--<TextBox Grid.Row="2"  HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Background="Black" BorderBrush="Black" Foreground="White"/>-->
+        <TextBox Grid.Row="1" x:Name="UserId" Grid.ColumnSpan="2" PlaceholderText="Enter your User Id" GotFocus="TextBox_GotFocus" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Top" Width="auto"/>
+        <PasswordBox Grid.Row="2" x:Name="Password" Grid.ColumnSpan="2"  PlaceholderText="Enter your Password" GotFocus="PasswordBox_GotFocus"   HorizontalAlignment="Center"  VerticalAlignment="Top" Height="auto" Width="auto"/>
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Validate" HorizontalContentAlignment="Center"  HorizontalAlignment="Center"  VerticalAlignment="Top" Width="172" Click="Button_Click" BorderBrush="Red"/>
     </Grid>
 
 

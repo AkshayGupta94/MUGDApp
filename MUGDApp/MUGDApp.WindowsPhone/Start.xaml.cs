@@ -75,9 +75,9 @@ namespace MUGDApp
          private void Menu_ItemClick(object sender, ItemClickEventArgs e)
         {
             datamodel lolol = e.ClickedItem as datamodel;
-            if (lolol.title == "Register")
+            if (lolol.name == "Register")
             {
-                Frame.Navigate(typeof(MainPage));
+                Frame.Navigate(typeof(loginMember));
             }
             else if (lolol.title == "Delete user")
             {
