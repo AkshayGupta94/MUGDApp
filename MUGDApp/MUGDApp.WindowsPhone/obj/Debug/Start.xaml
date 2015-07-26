@@ -8,21 +8,55 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid >
-        <Grid.Background>
-            <ImageBrush ImageSource="Assets/ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg"/>
-        </Grid.Background>
-        <Button x:ConnectionId='1' Content="Events" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top" BorderBrush="Red" BorderThickness="4"                        Height="100" Width="100"/>
-        <Button x:ConnectionId='2' Content="Chit-Chat" HorizontalAlignment="Left" Margin="265,176,0,0" VerticalAlignment="Top" Foreground="White" BorderThickness="4" BorderBrush="Red"                      Height="100" Width="100"/>
-        <Button x:ConnectionId='3' Content="Brain &#xD;&#xA;Game" HorizontalAlignment="Left" Margin="10,401,0,0" VerticalAlignment="Top" BorderBrush="Red" BorderThickness="4"                        Height="100" Width="100"/>
-        <Button x:ConnectionId='4' Content="Members&#xD;&#xA;   Login" HorizontalAlignment="Left" Margin="265,401,0,0" VerticalAlignment="Top" Foreground="White" BorderThickness="4" BorderBrush="Red"                        Height="100" Width="100">
-            <Button.Background>
-                <ImageBrush Stretch="Fill"/>
-            </Button.Background>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="10,29,0,0" TextWrapping="Wrap" Text="App Name" VerticalAlignment="Top" Height="65" Width="364" FontSize="48" FontStyle="Italic" TextAlignment="Center" Foreground="Lime" FontWeight="Bold"/>
+    <Page.Resources>
+        <DataTemplate x:Key="Standard310x260ItemTemplate">
+            <Grid VerticalAlignment="Center" Height="150" Width="150" Margin="5,10,5,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Background="{Binding back}" Height="150">
+                    <Image Grid.Row="1" VerticalAlignment="Bottom" 
+                           Opacity="0.7"
+                           HorizontalAlignment="Right" Width="70" Height="70" Source="{Binding src}" Stretch="Uniform" />
 
+                </Border>
+                
+               
+                    <TextBlock Grid.Row="0" Foreground="White" Text="{Binding title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
+                    <!--<TextBlock Text="{Binding desc}" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" MaxHeight="60" />-->
+                
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid Background="White">
+        <Hub HorizontalAlignment="Center" RequestedTheme="Light" Header="MUGD App" x:Name="Page" Visibility="Visible" VerticalAlignment="Center">
 
+            <HubSection x:Name="Menu" VerticalAlignment="Center" HorizontalAlignment="Center" >
+
+                <DataTemplate>
+                    <GridView x:ConnectionId='1'
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        x:Name="Menu"
+                        ItemsSource="{Binding}"
+                        Margin="-9,-14,0,0"
+                                                  
+                        ItemTemplate="{StaticResource Standard310x260ItemTemplate}"
+                        SelectionMode="None"
+                                   
+                        IsSwipeEnabled="false"
+                        IsItemClickEnabled="True"
+                      >
+                    
+                    </GridView>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        <!--<Button Content="Events" HorizontalAlignment="Left" Margin="26,230,0,0" VerticalAlignment="Top" BorderBrush="Red" BorderThickness="4" Click="Button_Click_1"/>
+        <Button Content="Chit-Chat" HorizontalAlignment="Left" Margin="267,230,0,0" VerticalAlignment="Top" Foreground="White" BorderThickness="4" BorderBrush="Red" Click="Button_Click"/>-->
+
+        
     </Grid>
 </Page>
 

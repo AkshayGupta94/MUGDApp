@@ -61,6 +61,9 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Event.png">
+      <PackagePath>Pics\Event.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\event.jpg">
       <PackagePath>Assets\event.jpg</PackagePath>
     </AppxPackagedFile>

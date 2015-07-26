@@ -208,11 +208,3 @@ C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\
 C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\ProjectArchitectures.txt
-C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles
-C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles.intermediate
-C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles
-C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles.intermediate
-C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles
-C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles.intermediate
-C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml
-C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml.intermediate
