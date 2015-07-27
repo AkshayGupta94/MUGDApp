@@ -18,16 +18,26 @@
     <Compile Include="$(MSBuildThisFileDirectory)ChatPublic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)datamodel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Events.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Eventspage.xaml.cs">
+      <DependentUpon>Eventspage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)loginMember.xaml.cs">
       <DependentUpon>loginMember.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Pics\area51.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Pics\chat.png" />
     <Content Include="$(MSBuildThisFileDirectory)Pics\Event.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Pics\idea.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Pics\login.png" />
     <Content Include="$(MSBuildThisFileDirectory)Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Eventspage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)loginMember.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -6,7 +6,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -24,13 +23,13 @@ namespace MUGDApp
     /// </summary>
     public sealed partial class Eventspage : Page
     {
-        private IMobileServiceTable<Events> Table = App.MobileService.GetTable<Events>();
-        private MobileServiceCollection<Events, Events> items;
+        //private IMobileServiceTable<Events> Table = App.MobileService.GetTable<Events>();
+        //private MobileServiceCollection<Events, Events> items;
 
         public Eventspage()
         {
             this.InitializeComponent();
-            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+            
         }
 
         /// <summary>
@@ -38,28 +37,21 @@ namespace MUGDApp
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            List<Events> ob = new List<Events>();
-            items = await Table.ToCollectionAsync();
-            foreach (Events erg in items)
-            {
-                Events f = new Events();
-                f.Desc = erg.Desc;
-                ob.Add(f);
-            }
-            listEvent.ItemsSource = ob;    //list view data
+
+            List<Events> myList1 = new List<Events>();
+            Events temp1 = new Events();
+            temp1.college = "college";
+            temp1.date = DateTime.Now.ToString("dd/MM/yyyy");
+            temp1.Desc = "this is the about page hellooooo hkbdssasdnathis is the about page hellooooo hkbdssasdnathis is the about page hellooooo hkbdssasdna";
+            temp1.Title = "this is title";
+            temp1.ImageUri = "/Pics/area51.jpg";
+            myList1.Add(temp1);
+            event1.DataContext = myList1;
+           
         }
-        private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
-        {
-            if (Frame.CanGoBack)
-                Frame.GoBack();
-            else
-            {
-                Frame.Navigate(typeof(Start));
-            }
-                e.Handled = true;
-        }
+       
 
         private void eventGrid_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
@@ -73,8 +65,18 @@ namespace MUGDApp
 
         private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Events a = listEvent.SelectedItem as Events;
-            Frame.Navigate(typeof(eventDetailxaml), a);
+           // Events a = listEvent.SelectedItem as Events;
+            //Frame.Navigate(typeof(eventDetailxaml), a);
+        }
+
+        private void Menu_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void Menu_ItemClick_1(object sender, ItemClickEventArgs e)
+        {
+
         }
         
     }

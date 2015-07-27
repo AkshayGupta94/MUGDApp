@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>AXE-WORK</Machine>
-    <WindowsUser>Akshay</WindowsUser>
+    <Machine>WARMACHINE94</Machine>
+    <WindowsUser>garv</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>49444AxeJulius.MugdAPP</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>BBBABC95AF962417EFCFF11FEAF1AA2F9D33D475AE3CAC19A403CF2452137711</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>49444AxeJulius.MugdAPP_1.0.0.0_neutral__2nh7c0d2m2w4p</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>49444AxeJulius.MugdAPP_2nh7c0d2m2w4p!App</RegisteredUserModeAppID>
@@ -17,212 +17,228 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-26T13:15:56.199</Modified>
+      <Modified>2015-07-27T14:53:35.548</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.exe">
       <PackagePath>MUGDApp.Windows.exe</PackagePath>
-      <Modified>2015-07-26T13:16:28.368</Modified>
+      <Modified>2015-07-27T16:19:53.116</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
-      <Modified>2015-07-09T18:56:26.515</Modified>
+      <Modified>2015-07-26T14:19:09.969</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
-      <Modified>2015-07-09T18:56:26.526</Modified>
+      <Modified>2015-07-26T14:19:09.922</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2015-07-09T18:56:24.080</Modified>
+      <Modified>2015-07-26T14:19:08.625</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
-      <Modified>2015-07-09T18:56:26.279</Modified>
+      <Modified>2015-07-26T14:19:08.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
-      <Modified>2015-07-09T18:56:26.292</Modified>
+      <Modified>2015-07-26T14:19:08.203</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.dll">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.dll">
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
-      <Modified>2015-07-13T18:19:37.969</Modified>
+      <Modified>2015-07-26T14:19:08.828</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T05:25:28.000</Modified>
+      <Modified>2015-07-26T14:18:53.125</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T05:25:28.000</Modified>
+      <Modified>2015-07-26T14:18:53.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T05:25:28.000</Modified>
+      <Modified>2015-07-26T14:18:53.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T05:25:28.000</Modified>
+      <Modified>2015-07-26T14:18:53.141</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Event.png">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Shared\Pics\chat.png">
+      <PackagePath>Pics\chat.png</PackagePath>
+      <Modified>2015-07-27T07:49:12.154</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Shared\Pics\Event.png">
       <PackagePath>Pics\Event.png</PackagePath>
-      <Modified>2015-07-26T12:47:08.487</Modified>
+      <Modified>2015-07-26T14:18:53.047</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\area51.jpg">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Shared\Pics\idea.png">
+      <PackagePath>Pics\idea.png</PackagePath>
+      <Modified>2015-07-27T07:51:27.112</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Shared\Pics\login.png">
+      <PackagePath>Pics\login.png</PackagePath>
+      <Modified>2015-07-27T07:50:39.607</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Shared\Pics\area51.jpg">
       <PackagePath>Pics\area51.jpg</PackagePath>
-      <Modified>2015-07-26T10:38:19.434</Modified>
+      <Modified>2015-07-26T14:18:53.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Shared\Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg">
       <PackagePath>Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg</PackagePath>
-      <Modified>2015-07-26T10:38:19.606</Modified>
+      <Modified>2015-07-26T14:18:53.078</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-07-09T18:57:20.553</Modified>
+      <Modified>2015-07-26T18:31:14.429</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\loginMember.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\Eventspage.xbf">
+      <PackagePath>Eventspage.xbf</PackagePath>
+      <Modified>2015-07-27T16:19:52.579</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\loginMember.xbf">
       <PackagePath>loginMember.xbf</PackagePath>
-      <Modified>2015-07-26T13:15:55.197</Modified>
+      <Modified>2015-07-26T18:31:14.431</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-07-13T19:09:53.665</Modified>
+      <Modified>2015-07-26T18:31:14.430</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\Start.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\Start.xbf">
       <PackagePath>Start.xbf</PackagePath>
-      <Modified>2015-07-26T12:32:16.610</Modified>
+      <Modified>2015-07-27T14:53:34.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.xr.xml">
       <PackagePath>MUGDApp.Windows.xr.xml</PackagePath>
-      <Modified>2015-07-26T13:15:55.174</Modified>
+      <Modified>2015-07-27T15:28:54.240</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
       <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
-      <Modified>2015-07-13T18:19:38.079</Modified>
+      <Modified>2015-07-26T14:19:09.125</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.975</Modified>
+      <Modified>2015-07-26T14:19:08.844</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AnimatingContainer\AnimatingContainer.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AnimatingContainer\AnimatingContainer.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\AnimatingContainer\AnimatingContainer.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.977</Modified>
+      <Modified>2015-07-26T14:19:08.859</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AutoCompleteTextBox\AutoCompleteTextBox.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AutoCompleteTextBox\AutoCompleteTextBox.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\AutoCompleteTextBox\AutoCompleteTextBox.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.981</Modified>
+      <Modified>2015-07-26T14:19:08.859</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.987</Modified>
+      <Modified>2015-07-26T14:19:08.891</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.989</Modified>
+      <Modified>2015-07-26T14:19:08.922</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CascadingTextBlock\CascadingTextBlock.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CascadingTextBlock\CascadingTextBlock.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\CascadingTextBlock\CascadingTextBlock.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.990</Modified>
+      <Modified>2015-07-26T14:19:08.922</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.995</Modified>
+      <Modified>2015-07-26T14:19:08.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CountdownControl\CountdownControl.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CountdownControl\CountdownControl.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\CountdownControl\CountdownControl.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.997</Modified>
+      <Modified>2015-07-26T14:19:08.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:37.998</Modified>
+      <Modified>2015-07-26T14:19:08.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.000</Modified>
+      <Modified>2015-07-26T14:19:08.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.013</Modified>
+      <Modified>2015-07-26T14:19:08.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\FocusVisualizer\FocusVisualizer.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\FocusVisualizer\FocusVisualizer.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\FocusVisualizer\FocusVisualizer.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.014</Modified>
+      <Modified>2015-07-26T14:19:08.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\FxContentControl\FxContentControl.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\FxContentControl\FxContentControl.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\FxContentControl\FxContentControl.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.016</Modified>
+      <Modified>2015-07-26T14:19:08.969</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ImageButton\ImageButton.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ImageButton\ImageButton.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\ImageButton\ImageButton.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.020</Modified>
+      <Modified>2015-07-26T14:19:08.969</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.025</Modified>
+      <Modified>2015-07-26T14:19:08.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\InputDialog\InputDialog.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\InputDialog\InputDialog.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\InputDialog\InputDialog.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.029</Modified>
+      <Modified>2015-07-26T14:19:08.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.031</Modified>
+      <Modified>2015-07-26T14:19:08.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.035</Modified>
+      <Modified>2015-07-26T14:19:09.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ToolStrip\ToolStrip.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ToolStrip\ToolStrip.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\ToolStrip\ToolStrip.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.040</Modified>
+      <Modified>2015-07-26T14:19:09.047</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ToolWindow\ToolWindow.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ToolWindow\ToolWindow.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\ToolWindow\ToolWindow.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.044</Modified>
+      <Modified>2015-07-26T14:19:09.047</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeView.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeView.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeView.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.046</Modified>
+      <Modified>2015-07-26T14:19:09.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.050</Modified>
+      <Modified>2015-07-26T14:19:09.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.054</Modified>
+      <Modified>2015-07-26T14:19:09.078</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.058</Modified>
+      <Modified>2015-07-26T14:19:09.078</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.063</Modified>
+      <Modified>2015-07-26T14:19:09.094</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.067</Modified>
+      <Modified>2015-07-26T14:19:09.109</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xbf">
       <PackagePath>WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.071</Modified>
+      <Modified>2015-07-26T14:19:09.109</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Themes\Generic.xbf">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Themes\Generic.xbf">
       <PackagePath>WinRTXamlToolkit\Themes\Generic.xbf</PackagePath>
-      <Modified>2015-07-13T18:19:38.073</Modified>
+      <Modified>2015-07-26T14:19:09.125</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-26T13:15:55.692</Modified>
+      <Modified>2015-07-27T16:19:53.369</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

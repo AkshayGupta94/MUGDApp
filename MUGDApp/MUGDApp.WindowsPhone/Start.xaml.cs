@@ -39,81 +39,62 @@ namespace MUGDApp
         {
             List<datamodel> myList = new List<datamodel>();
             datamodel temp = new datamodel();
-            temp.back = "Red";
-            temp.name = "Register";
-            temp.src = "Pics/Event.png";
-            temp.title = "Events";
+            temp.back = "Blue";
+            temp.name = "Chats";
+            temp.src = "Pics/chat.png";
+            temp.title = "Chats";
             temp.desc = "Use this option to add new members to the group, This is similar to registeration and will not generate any user id and passwords";
             myList.Add(temp);
             temp = new datamodel();
 
-            temp.name = "Attendance";
-            temp.back = "Red";
-            temp.src = "/Assets/register.png";
-            temp.title = "Mark Attendance";
+            temp.name = "Events";
+            temp.back = "Blue";
+            temp.src = "Pics/Event.png";
+            temp.title = "Events";
             temp.desc = "Use this option to mark attendance of the members present at the event";
             myList.Add(temp);
             temp = new datamodel();
 
-            temp.name = "Search";
-            temp.back = "Red";
-            temp.src = "/Assets/search.png";
-            temp.title = "Search For members";
+            temp.name = "Idea's";
+            temp.back = "Blue";
+            temp.src = "Pics/idea.png";
+            temp.title = "Idea's";
             temp.desc = "Use this option to find members and see their details";
             myList.Add(temp);
             temp = new datamodel();
 
-            temp.name = "Update";
-            temp.back = "Red";
-            temp.src = "/Assets/update.png";
-            temp.title = "Update the database";
+            temp.name = "Member Login";
+            temp.back = "Blue";
+            temp.src = "Pics/login.png";
+            temp.title = "Member Login";
             temp.desc = "Use this option to update members database";
             myList.Add(temp);
-
+            
             Menu.DataContext = myList;
         }
          private void Menu_ItemClick(object sender, ItemClickEventArgs e)
         {
             datamodel lolol = e.ClickedItem as datamodel;
-            if (lolol.name == "Register")
+            if (lolol.name == "Events")
+            {
+                Frame.Navigate(typeof(eventDetailxaml));
+            }
+            else if (lolol.title == "Chats")
+            {
+                Frame.Navigate(typeof(MainPage));
+            }
+            else if (lolol.title == "Idea's")
+            {
+                Frame.Navigate(typeof(Eventspage));
+            }
+            else if (lolol.title == "Member Login")
             {
                 Frame.Navigate(typeof(loginMember));
             }
-            else if (lolol.title == "Delete user")
-            {
-                Frame.Navigate(typeof(MainPage));
-            }
-            else if (lolol.title == "Search For users")
-            {
-                Frame.Navigate(typeof(MainPage));
-            }
-            else if (lolol.title == "Add College")
-            {
-                Frame.Navigate(typeof(MainPage));
-            }
-            else if (lolol.title == "Remove College")
-            {
-                Frame.Navigate(typeof(MainPage));
-            }
+          
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //this.Frame.Navigate(typeof(Login));
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Eventspage));
-        }
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            //this.Frame.Navigate(typeof(idea));
-        }
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(loginMember));
-        }
-        private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+           
+          private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
         {
             if (!e.Handled && Frame.CurrentSourcePageType.FullName == "MUGDApp.Start")
                 Application.Current.Exit();

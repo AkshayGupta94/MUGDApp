@@ -25,6 +25,7 @@ namespace MUGDApp
         public Start()
         {
             this.InitializeComponent();
+           
         }
 
         /// <summary>
@@ -32,77 +33,67 @@ namespace MUGDApp
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+
+            protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             List<datamodel> myList = new List<datamodel>();
             datamodel temp = new datamodel();
-            temp.back = "Red";
-            temp.name = "Register";
-            temp.src = "/Assets/Plus.png";
-            temp.title = "Register";
+            temp.back = "Blue";
+            temp.name = "Chats";
+            temp.src = "Pics/chat.png";
+            temp.title = "Chats";
             temp.desc = "Use this option to add new members to the group, This is similar to registeration and will not generate any user id and passwords";
             myList.Add(temp);
             temp = new datamodel();
 
-            temp.name = "Attendance";
-            temp.back = "Red";
-            temp.src = "/Assets/register.png";
-            temp.title = "Mark Attendance";
+            temp.name = "Events";
+            temp.back = "Blue";
+            temp.src = "Pics/Event.png";
+            temp.title = "Events";
             temp.desc = "Use this option to mark attendance of the members present at the event";
             myList.Add(temp);
             temp = new datamodel();
 
-            temp.name = "Search";
-            temp.back = "Red";
-            temp.src = "/Assets/search.png";
-            temp.title = "Search For members";
+            temp.name = "Idea's";
+            temp.back = "Blue";
+            temp.src = "Pics/idea.png";
+            temp.title = "Idea's";
             temp.desc = "Use this option to find members and see their details";
             myList.Add(temp);
             temp = new datamodel();
 
-            temp.name = "Update";
-            temp.back = "Red";
-            temp.src = "/Assets/update.png";
-            temp.title = "Update the database";
+            temp.name = "Member Login";
+            temp.back = "Blue";
+            temp.src = "Pics/login.png";
+            temp.title = "Member Login";
             temp.desc = "Use this option to update members database";
             myList.Add(temp);
-
+            
             Menu.DataContext = myList;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Events));
-        }
-
+      
         private void Menu_ItemClick(object sender, ItemClickEventArgs e)
         {
             datamodel lolol = e.ClickedItem as datamodel;
-            if (lolol.title == "Register")
+            if (lolol.name == "Events")
+            {
+                Frame.Navigate(typeof(Eventspage));
+            }
+            else if (lolol.title == "Chats")
+            {
+                Frame.Navigate(typeof(MainPage));
+            }
+            else if (lolol.title == "Idea's")
+            {
+                Frame.Navigate(typeof(Eventspage));
+            }
+            else if (lolol.title == "Member Login")
             {
                 Frame.Navigate(typeof(loginMember));
             }
-            else if (lolol.title == "Delete user")
-            {
-                Frame.Navigate(typeof(MainPage));
-            }
-            else if (lolol.title == "Search For users")
-            {
-                Frame.Navigate(typeof(MainPage));
-            }
-            else if (lolol.title == "Add College")
-            {
-                Frame.Navigate(typeof(MainPage));
-            }
-            else if (lolol.title == "Remove College")
-            {
-                Frame.Navigate(typeof(MainPage));
-            }
+
         }
+           
+     
     }
 }

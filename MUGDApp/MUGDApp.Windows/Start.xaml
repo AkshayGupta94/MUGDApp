@@ -7,27 +7,40 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
     <Page.Resources>
         <DataTemplate x:Key="Standard310x260ItemTemplate">
-        <Grid VerticalAlignment="Center" Height="250" Width="310" Margin="5,10,5,10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Border Background="{Binding back}" Height="150">
-                <Image Source="{Binding src}" Stretch="Uniform" />
-            </Border>
-            <StackPanel Grid.Row="1" Margin="0,10,0,0">
-                <TextBlock Text="{Binding title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
-                <TextBlock Text="{Binding desc}" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" MaxHeight="60" />
-            </StackPanel>
-        </Grid>
-    </DataTemplate>
+            <Grid VerticalAlignment="Center" Height="250" Width="250" Margin="5,10,5,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.1"/>
+                </Grid.RowDefinitions>
+
+                <Border Background="{Binding back}" Height="250">
+                    <Image Grid.Row="1" Margin="0,5,0,0" VerticalAlignment="Bottom" 
+                           Opacity="0.7"
+                           HorizontalAlignment="Right" Width="130" Height="130" Source="{Binding src}" Stretch="UniformToFill" />
+
+                </Border>
+
+
+                <TextBlock Grid.Row="0"  Foreground="White" HorizontalAlignment="Center" FontFamily="Hobo Std" FontSize="20" FontWeight="Bold" Text="{Binding title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
+                <!--<TextBlock Text="{Binding desc}" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" MaxHeight="60" />-->
+
+            </Grid>
+        </DataTemplate>
     </Page.Resources>
     <Grid Background="White">
-        <Hub HorizontalAlignment="Center" RequestedTheme="Light" Header="MUGD App" x:Name="Page" Visibility="Visible" VerticalAlignment="Center">
-
-            <HubSection x:Name="Menu" Header="hello" VerticalAlignment="Center" HorizontalAlignment="Center" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Text="MUGD APP" Grid.Row="0" Foreground="#FFFFFF1D" Visibility="Visible" VerticalAlignment="Stretch" FontSize="35" FontFamily="Segoe UI" TextAlignment="Center" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FF060655" />
+        <Hub HorizontalAlignment="Center" Grid.Row="1" RequestedTheme="Light" x:Name="Page" Visibility="Visible" VerticalAlignment="Center">
+            
+             
+            <HubSection x:Name="Menu" VerticalAlignment="Center" HorizontalAlignment="Center" >
 
                 <DataTemplate>
                     <GridView
@@ -43,6 +56,7 @@
                         IsSwipeEnabled="false"
                         IsItemClickEnabled="True"
                       >
+
                     </GridView>
                 </DataTemplate>
             </HubSection>

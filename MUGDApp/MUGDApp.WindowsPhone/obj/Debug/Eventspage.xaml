@@ -7,39 +7,53 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <DataTemplate x:Key="Standard3100x260ItemTemplate">
+            <Grid  VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="250">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.15*"/>
+                    <RowDefinition Height="0.15*"/>
+                    <RowDefinition Height="0.2*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Width="0.3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="title" TextAlignment="Center" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="20" FontWeight="Bold" Text="{Binding Title}" Foreground="Black"/>
+                <Image x:Name="eventImg" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Source="{Binding ImageUri}" Stretch="Fill"/>
+                <TextBlock x:Name="spons" TextAlignment="Center" Foreground="Red" Grid.Row="2" Grid.Column="1" FontSize="17" HorizontalAlignment="Center" Text="spons"/>
+                <TextBlock x:Name="date" TextAlignment="Center" Grid.Row="2" Foreground="Black" Grid.Column="0" FontSize="16" FontWeight="SemiBold" Text="{Binding date}"/>
+                <TextBlock x:Name="venue" TextAlignment="Center" Grid.Row="2" Foreground="Black" Grid.Column="2" FontSize="16" FontWeight="SemiBold" HorizontalAlignment="Center" Text="{Binding college}"/>
+                <TextBlock x:Name="about" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" FontSize="13" Text="{Binding Desc}" Foreground="Black" TextWrapping="Wrap" />
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid Background="White" Margin="0,0,0,0" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Hub HorizontalAlignment="Stretch" x:Name="page1" Margin="0,0,0,0" Padding="0">
 
-    <Grid >
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/event.jpg"/>
-        </Grid.Background>
-        <Grid HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Top" Width="auto"/>
-        <ListView x:ConnectionId='1' 
-                                                         
-            
-            x:Name="listEvent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="auto" Width="auto">
-            <ListView.ItemTemplate>
+            <HubSection x:Name="event1" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0" HorizontalContentAlignment="Stretch">
+
                 <DataTemplate>
-                    <Grid x:Name="eventGrid" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="100" Width="auto"  Background="{Binding}">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="25"/>
-                            <RowDefinition Height="20"/>
-                            <RowDefinition Height="40"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="75"/>
-                            <ColumnDefinition Width="220"/>
-                        </Grid.ColumnDefinitions>
-                        <!--<Image x:Name="imgEvent" Grid.Column="1" Grid.RowSpan="3" Height="75" Width="75" Margin="0,0,5,0" VerticalAlignment="Stretch" Source="{Binding}" />-->
-                        <TextBox x:Name="titleEvent" Grid.Column="2" Grid.Row="1" TextAlignment="Center" FontSize="23" Foreground="Red" FontStyle="Italic" FontWeight="Bold" Text="{Binding Title}" />
-                        <!--<TextBox x:Name="venueEvent" Grid.Column="2" Grid.Row="2" TextAlignment="Left" FontSize="18" Foreground="Black" FontStyle="Italic" HorizontalAlignment="Left" Text="{Binding}" />-->
-                        <!--<TextBox x:Name="dateEvent" Grid.Column="2" Grid.Row="2"  TextAlignment="Center" HorizontalAlignment="Right" FontSize="18" Foreground="Black" FontStyle="Italic" Text="{Binding date}" />-->
-                        <TextBox x:Name="aboutEvent" Grid.Column="2" Grid.Row="3" TextAlignment="Center" FontSize="16" Foreground="Cyan" Text="{Binding Desc}"/>
-                    </Grid>
+                    <GridView x:ConnectionId='1'
+                        HorizontalAlignment="Stretch"
+                        x:Name="event1"
+                       VerticalAlignment="Stretch"
+                                                    
+                        
+                        ItemsSource="{Binding}"
+                        ItemTemplate="{StaticResource Standard3100x260ItemTemplate}"
+                        SelectionMode="None"
+                        Visibility="Visible"          
+                        IsSwipeEnabled="false"
+                        IsItemClickEnabled="True"
+                      >
+                        
+                    </GridView>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
+            </HubSection>
+        </Hub>
     </Grid>
-
 </Page>
 

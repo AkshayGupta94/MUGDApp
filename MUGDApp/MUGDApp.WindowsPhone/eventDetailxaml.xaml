@@ -10,14 +10,14 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Pivot Title="{Binding}" FontSize="12">
-            <PivotItem Header="About" FontSize="12">
+            <PivotItem Header="About">
                 <GridView x:Name="aboutc" >
                     <Image Height="200" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding}"/>
                     <TextBlock TextWrapping="Wrap" Text="TextBlock" DataContext="{Binding}"/>
 
                 </GridView>
             </PivotItem>
-            <PivotItem Header="Venue" FontSize="12" >
+            <PivotItem Header="Venue" FontSize="12" >                
                 <GridView x:Name="venuec">
                     <TextBlock TextWrapping="Wrap" DataContext="{Binding}" Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
