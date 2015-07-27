@@ -19,13 +19,13 @@
 
                 <Border Background="{Binding back}" Height="250">
                     <Image Grid.Row="1" Margin="0,5,0,0" VerticalAlignment="Bottom" 
-                           Opacity="0.7"
-                           HorizontalAlignment="Right" Width="130" Height="130" Source="{Binding src}" Stretch="UniformToFill" />
+                           Opacity="0.5"
+                           HorizontalAlignment="Right" Width="130" Height="130"  Source="{Binding src}" Stretch="UniformToFill" />
 
                 </Border>
 
 
-                <TextBlock Grid.Row="0"  Foreground="White" HorizontalAlignment="Center" FontFamily="Hobo Std" FontSize="20" FontWeight="Bold" Text="{Binding title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
+                <TextBlock Grid.Row="0" Margin="20,10,0,0"  Foreground="White" HorizontalAlignment="Left" FontFamily="Segoi UI" FontSize="20" Text="{Binding title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
                 <!--<TextBlock Text="{Binding desc}" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" MaxHeight="60" />-->
 
             </Grid>
@@ -36,7 +36,8 @@
             <RowDefinition Height="0.1*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBox Text="MUGD APP" Grid.Row="0" Foreground="#FFFFFF1D" Visibility="Visible" VerticalAlignment="Stretch" FontSize="35" FontFamily="Segoe UI" TextAlignment="Center" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FF060655" />
+        
+        <TextBox Text="\n     Mugd App" Grid.Row="0" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="35" FontFamily="Segoe UI" TextAlignment="Left" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FF0808F0" />
         <Hub HorizontalAlignment="Center" Grid.Row="1" RequestedTheme="Light" x:Name="Page" Visibility="Visible" VerticalAlignment="Center">
             
              

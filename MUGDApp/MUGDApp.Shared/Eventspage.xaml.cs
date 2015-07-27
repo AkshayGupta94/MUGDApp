@@ -1,4 +1,4 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,8 +23,8 @@ namespace MUGDApp
     /// </summary>
     public sealed partial class Eventspage : Page
     {
-        //private IMobileServiceTable<Events> Table = App.MobileService.GetTable<Events>();
-        //private MobileServiceCollection<Events, Events> items;
+        private IMobileServiceTable<Events> Table = App.MobileService.GetTable<Events>();
+        private MobileServiceCollection<Events, Events> items;
 
         public Eventspage()
         {
@@ -37,18 +37,33 @@ namespace MUGDApp
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-
-            List<Events> myList1 = new List<Events>();
-            Events temp1 = new Events();
-            temp1.college = "college";
-            temp1.date = DateTime.Now.ToString("dd/MM/yyyy");
-            temp1.Desc = "this is the about page hellooooo hkbdssasdnathis is the about page hellooooo hkbdssasdnathis is the about page hellooooo hkbdssasdna";
-            temp1.Title = "this is title";
-            temp1.ImageUri = "/Pics/area51.jpg";
-            myList1.Add(temp1);
-            event1.DataContext = myList1;
+            items = await Table.Where(Events
+                => Events.ImageUri!= null).ToCollectionAsync();
+            List<EventList> item = new List<EventList>();
+            foreach (Events eve in items)
+            {
+                EventList temp = new EventList();
+                temp.college = eve.college;
+                temp.Desc = eve.Desc;
+                temp.Date = eve.Date;
+                temp.type = eve.type;
+                temp.issuedBy = eve.issuedBy;
+                temp.date = eve.date;
+                temp.Title = eve.Title;
+                temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.ImageUri));
+                item.Add(temp);
+            }
+            //List<Events> myList1 = new List<Events>();
+            //Events temp1 = new Events();
+            //temp1.college = "college";
+            //temp1.date = DateTime.Now.ToString("dd/MM/yyyy");
+            //temp1.Desc = "this is the about page hellooooo hkbdssasdnathis is the about page hellooooo hkbdssasdnathis is the about page hellooooo hkbdssasdna";
+            //temp1.Title = "this is title";
+            //temp1.ImageUri = "/Pics/area51.jpg";
+            //myList1.Add(temp1);
+            event1.DataContext = item;
            
         }
        

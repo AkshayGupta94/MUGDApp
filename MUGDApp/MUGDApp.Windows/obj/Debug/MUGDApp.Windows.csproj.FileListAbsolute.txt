@@ -262,3 +262,13 @@ C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Window
 C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles.intermediate
 C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml
 C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml.intermediate
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\BlankPage.xbf
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\Eventspage.xbf
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.g.i.cs
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.g.cs
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Eventspage.g.i.cs
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Eventspage.g.cs
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.xaml
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Eventspage.xaml
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.xbf
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Eventspage.xbf

@@ -39,7 +39,7 @@ namespace MUGDApp
         {
             List<datamodel> myList = new List<datamodel>();
             datamodel temp = new datamodel();
-            temp.back = "Blue";
+            temp.back = "#FFD71A20";
             temp.name = "Chats";
             temp.src = "Pics/chat.png";
             temp.title = "Chats";
@@ -48,23 +48,23 @@ namespace MUGDApp
             temp = new datamodel();
 
             temp.name = "Events";
-            temp.back = "Blue";
+            temp.back = "#FF00BFF3";
             temp.src = "Pics/Event.png";
             temp.title = "Events";
             temp.desc = "Use this option to mark attendance of the members present at the event";
             myList.Add(temp);
             temp = new datamodel();
 
-            temp.name = "Idea's";
-            temp.back = "Blue";
+            temp.name = "User Voice";
+            temp.back = "#FFFF8E01";
             temp.src = "Pics/idea.png";
-            temp.title = "Idea's";
+            temp.title = "User Voice";
             temp.desc = "Use this option to find members and see their details";
             myList.Add(temp);
             temp = new datamodel();
 
             temp.name = "Member Login";
-            temp.back = "Blue";
+            temp.back = "#FF7CC576";
             temp.src = "Pics/login.png";
             temp.title = "Member Login";
             temp.desc = "Use this option to update members database";
@@ -77,7 +77,7 @@ namespace MUGDApp
             datamodel lolol = e.ClickedItem as datamodel;
             if (lolol.name == "Events")
             {
-                Frame.Navigate(typeof(eventDetailxaml));
+                Frame.Navigate(typeof(Eventspage));
             }
             else if (lolol.title == "Chats")
             {

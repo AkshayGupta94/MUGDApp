@@ -8,7 +8,7 @@
     <RootPropertyPathName Name="Desc" />
     <RootPropertyPathName Name="college" />
     <RootPropertyPathName Name="date" />
-    <RootPropertyPathName Name="ImageUri" />
+    <RootPropertyPathName Name="bitmapImage" />
     <RootPropertyPathName Name="Title" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -60,10 +60,11 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="FontFamily" />
-      <RootProperty Name="FontWeight" />
       <RootProperty Name="Style" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="Items" />
@@ -111,11 +112,9 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="FontWeight" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="IsDoubleTapEnabled" />
       <RootProperty Name="IsReadOnly" />
-      <RootProperty Name="FontStyle" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Width" />
@@ -159,6 +158,9 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Height" />
       <RootProperty Name="Child" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Hub">
@@ -167,17 +169,14 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Sections" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HubSection">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="ContentTemplate" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="HorizontalContentAlignment" />
     </RootType>
     <RootType FullName="MUGDApp.Start" />
+    <RootType FullName="MUGDApp.BlankPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootMethod Name="GetVerticalScrollBarVisibility" />
       <RootMethod Name="SetVerticalScrollBarVisibility" />

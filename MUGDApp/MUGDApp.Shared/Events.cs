@@ -33,12 +33,7 @@ namespace MUGDApp
 
 
     }
-    class temp
-    {
-        public BitmapImage bitmapImage { get; set; }
-        public string Title { get; set; }
-
-    }
+   
     //class eventpg
     //{
     //    public BitmapImage bitmapImage { get; set; }

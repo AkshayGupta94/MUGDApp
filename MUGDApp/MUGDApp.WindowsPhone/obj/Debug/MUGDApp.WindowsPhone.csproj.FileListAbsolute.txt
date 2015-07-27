@@ -276,3 +276,8 @@ C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.Window
 C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\ProjectArchitectures.txt
 C:\Users\garv\Documents\Visual Studio 2013\Projects\Repos\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MUGDApp.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\BlankPage.xbf
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.g.i.cs
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.g.cs
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.xaml
+C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.xbf
