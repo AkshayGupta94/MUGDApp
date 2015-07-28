@@ -83,6 +83,9 @@
     <Compile Include="eventDetailxaml.xaml.cs">
       <DependentUpon>eventDetailxaml.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Eventspage.xaml.cs">
+      <DependentUpon>Eventspage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -116,6 +119,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="eventDetailxaml.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Eventspage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

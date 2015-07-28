@@ -83,11 +83,11 @@
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\BlankPage.xbf">
       <PackagePath>BlankPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\Eventspage.xbf">
-      <PackagePath>Eventspage.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\loginMember.xbf">
       <PackagePath>loginMember.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\Eventspage.xbf">
+      <PackagePath>Eventspage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>

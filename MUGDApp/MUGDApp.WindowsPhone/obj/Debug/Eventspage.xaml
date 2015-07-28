@@ -25,7 +25,7 @@
                     </Grid.ColumnDefinitions>
                     <TextBlock x:Name="title" TextAlignment="Center" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="20" FontWeight="Bold" Text="{Binding Title}" Foreground="Black"/>
                     <Image x:Name="eventImg" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Source="{Binding bitmapImage}" Stretch="Fill"/>
-                    <TextBlock x:Name="spons" TextAlignment="Center" Foreground="Red" Grid.Row="2" Grid.Column="1" FontSize="17" HorizontalAlignment="Center" Text="spons"/>
+                    <TextBlock x:Name="spons" TextAlignment="Center" Foreground="Red" Grid.Row="2" Grid.Column="1" FontSize="17" HorizontalAlignment="Center" Text="{Binding type}"/>
                     <TextBlock x:Name="date" TextAlignment="Center" Grid.Row="2" Foreground="Black" Grid.Column="0" FontSize="16" FontWeight="SemiBold" Text="{Binding date}"/>
                     <TextBlock x:Name="venue" TextAlignment="Center" Grid.Row="2" Foreground="Black" Grid.Column="2" FontSize="16" FontWeight="SemiBold" HorizontalAlignment="Center" Text="{Binding college}"/>
                     <TextBlock x:Name="about" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" FontSize="13" Text="{Binding Desc}" Foreground="Black" TextWrapping="Wrap" />

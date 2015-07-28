@@ -1,4 +1,4 @@
-﻿<Page
+<Page
     x:Class="MUGDApp.Eventspage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -43,12 +43,12 @@
         <TextBox Text="     Events" Grid.Row="0" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="30"  TextAlignment="Left" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FF00BFF3" />
 
 
-        <GridView x:ConnectionId='1'
+        <GridView
                         Grid.Row="1"
                         HorizontalAlignment="Stretch"
                         x:Name="event1"
                        VerticalAlignment="Stretch"
-                                                    
+                        ItemClick="Menu_ItemClick_1"
                         ItemsSource="{Binding}"
                         ItemTemplate="{StaticResource Standard3100x260ItemTemplate}"
                         SelectionMode="None"
@@ -62,4 +62,3 @@
         
     </Grid>
 </Page>
-

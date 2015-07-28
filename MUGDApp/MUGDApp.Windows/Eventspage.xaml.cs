@@ -50,7 +50,7 @@ namespace MUGDApp
                 temp.Date = eve.Date;
                 temp.type = eve.type;
                 temp.issuedBy = eve.issuedBy;
-                temp.date = eve.date;
+                //temp.date = eve.date;
                 temp.Title = eve.Title;
                 temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.ImageUri));
                 item.Add(temp);
@@ -80,7 +80,7 @@ namespace MUGDApp
 
         private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           // Events a = listEvent.SelectedItem as Events;
+            EventList a = event1.SelectedItem as EventList;
             //Frame.Navigate(typeof(eventDetailxaml), a);
         }
 

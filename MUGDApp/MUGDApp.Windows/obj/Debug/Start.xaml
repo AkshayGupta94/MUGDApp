@@ -37,7 +37,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
-        <TextBox Text="\n     Mugd App" Grid.Row="0" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="35" FontFamily="Segoe UI" TextAlignment="Left" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FF0808F0" />
+        <TextBox Text="     Mugd App" Grid.Row="0" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="35" FontFamily="Segoe UI" TextAlignment="Left" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FF0808F0" />
         <Hub HorizontalAlignment="Center" Grid.Row="1" RequestedTheme="Light" x:Name="Page" Visibility="Visible" VerticalAlignment="Center">
             
              

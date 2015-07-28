@@ -8,6 +8,7 @@
     <RootPropertyPathName Name="Desc" />
     <RootPropertyPathName Name="college" />
     <RootPropertyPathName Name="date" />
+    <RootPropertyPathName Name="type" />
     <RootPropertyPathName Name="bitmapImage" />
     <RootPropertyPathName Name="Title" />
   </Roots.PropertyPathNames>

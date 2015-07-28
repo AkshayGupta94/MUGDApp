@@ -22,9 +22,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)datamodel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EventList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Events.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Eventspage.xaml.cs">
-      <DependentUpon>Eventspage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)loginMember.xaml.cs">
       <DependentUpon>loginMember.xaml</DependentUpon>
     </Compile>
@@ -41,10 +38,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)BlankPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Eventspage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

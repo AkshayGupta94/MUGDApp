@@ -13,6 +13,7 @@ namespace MUGDApp
         public DateTime Date { get; set; }
         public string Title { get; set; }
         public string Desc { get; set; }
+       
         [JsonProperty(PropertyName = "containerName")]
         public string ContainerName { get; set; }
 
@@ -28,7 +29,7 @@ namespace MUGDApp
         public string type { get; set; }
         public string college { get; set; }
         public string issuedBy { get; set; }
-        public string date { get; set; }
+        
 
 
 
