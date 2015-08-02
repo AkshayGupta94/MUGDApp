@@ -85,9 +85,6 @@
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\BlankPage.xbf">
-      <PackagePath>BlankPage.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\loginMember.xbf">
       <PackagePath>loginMember.xbf</PackagePath>
     </AppxPackagedFile>

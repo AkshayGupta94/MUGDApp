@@ -9,10 +9,25 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot Title="{Binding}" FontSize="12">
-            <PivotItem Header="About">
-                <GridView x:Name="aboutc" >
-                    <Image Height="200" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.2*"/>
+
+        </Grid.RowDefinitions>
+        <Image Height="200" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="{Binding}"/>
+
+        <Pivot Title="{Binding}" Grid.Row="1">
+            <Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}"  FontSize="20" />
+                </DataTemplate>
+            </Pivot.HeaderTemplate>
+            <PivotItem  Header="About"  >
+               
+                <GridView x:Name="aboutc">
                     <TextBlock TextWrapping="Wrap" Text="TextBlock" DataContext="{Binding}"/>
 
                 </GridView>

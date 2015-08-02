@@ -148,23 +148,21 @@ namespace MUGDApp.MUGDApp_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "MUGDApp.Eventspage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "MUGDApp.MainPage";
             _typeNameTable[4] = "MUGDApp.Start";
-            _typeNameTable[5] = "MUGDApp.BlankPage";
-            _typeNameTable[6] = "MUGDApp.loginMember";
+            _typeNameTable[5] = "MUGDApp.loginMember";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::MUGDApp.Eventspage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::MUGDApp.MainPage);
             _typeTable[4] = typeof(global::MUGDApp.Start);
-            _typeTable[5] = typeof(global::MUGDApp.BlankPage);
-            _typeTable[6] = typeof(global::MUGDApp.loginMember);
+            _typeTable[5] = typeof(global::MUGDApp.loginMember);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -202,8 +200,7 @@ namespace MUGDApp.MUGDApp_Windows_XamlTypeInfo
         private object Activate_0_Eventspage() { return new global::MUGDApp.Eventspage(); }
         private object Activate_3_MainPage() { return new global::MUGDApp.MainPage(); }
         private object Activate_4_Start() { return new global::MUGDApp.Start(); }
-        private object Activate_5_BlankPage() { return new global::MUGDApp.BlankPage(); }
-        private object Activate_6_loginMember() { return new global::MUGDApp.loginMember(); }
+        private object Activate_5_loginMember() { return new global::MUGDApp.loginMember(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -244,16 +241,9 @@ namespace MUGDApp.MUGDApp_Windows_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  MUGDApp.BlankPage
+            case 5:   //  MUGDApp.loginMember
                 userType = new global::MUGDApp.MUGDApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_BlankPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  MUGDApp.loginMember
-                userType = new global::MUGDApp.MUGDApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_loginMember;
+                userType.Activator = Activate_5_loginMember;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

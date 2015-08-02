@@ -283,7 +283,6 @@ C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\
 C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\MUGDApp.WindowsPhone.exe.config
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\App.xbf
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\BlankPage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\loginMember.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\eventDetailxaml.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\Eventspage.xbf
@@ -316,8 +315,6 @@ C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\M
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MainPage.g.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Start.g.i.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Start.g.cs
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.g.i.cs
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.g.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\loginMember.g.i.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\loginMember.g.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
@@ -326,14 +323,12 @@ C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\e
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Eventspage.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MainPage.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Start.xaml
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\loginMember.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\App.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\eventDetailxaml.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Eventspage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MainPage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Start.xbf
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\BlankPage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\loginMember.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MUGDApp.WindowsPhone.exe
@@ -354,3 +349,11 @@ C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\q
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles.intermediate
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles.intermediate
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles.intermediate
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml.intermediate

@@ -112,7 +112,7 @@ namespace MUGDApp
         private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             EventList a = event1.SelectedItem as EventList;
-            //Frame.Navigate(typeof(eventDetailxaml), a);
+            Frame.Navigate(typeof(eventDetailxaml), a);
         }
 
         private void Menu_ItemClick(object sender, ItemClickEventArgs e)

@@ -273,7 +273,6 @@ C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Event
 C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.xbf
 C:\Users\Akshay\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Eventspage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\App.xbf
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\BlankPage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\loginMember.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\Eventspage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MainPage.xbf
@@ -306,8 +305,6 @@ C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\MainPa
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\MainPage.g.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Start.g.i.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Start.g.cs
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.g.i.cs
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.g.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\loginMember.g.i.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\loginMember.g.cs
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\XamlTypeInfo.g.cs
@@ -315,13 +312,11 @@ C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\App.xa
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Eventspage.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\MainPage.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Start.xaml
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\loginMember.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\App.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Eventspage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\MainPage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Start.xbf
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\BlankPage.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\loginMember.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\XamlSaveStateFile.xml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\MUGDApp.Windows.exe
