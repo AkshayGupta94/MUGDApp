@@ -12,6 +12,7 @@
     <RootPropertyPathName Name="type" />
     <RootPropertyPathName Name="bitmapImage" />
     <RootPropertyPathName Name="Message" />
+    <RootPropertyPathName Name="col" />
     <RootPropertyPathName Name="title" />
     <RootPropertyPathName Name="src" />
   </Roots.PropertyPathNames>
@@ -143,7 +144,6 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalContentAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Background" />
@@ -153,7 +153,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="Background" />
       <RootProperty Name="ItemTemplate" />

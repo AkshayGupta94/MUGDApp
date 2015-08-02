@@ -28,7 +28,7 @@ namespace MUGDApp
     public sealed partial class MainPage : Page
     {
        
-        public static ObservableCollection<ChatPublic> test;
+        public static ObservableCollection<ChatPubList> test;
         private IMobileServiceTable<ChatPublic> Table = App.MobileService.GetTable<ChatPublic>();
         private MobileServiceCollection<ChatPublic, ChatPublic> items;
 
@@ -64,12 +64,28 @@ namespace MUGDApp
         async void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
            
-            test = new ObservableCollection<ChatPublic>();
+            test = new ObservableCollection<ChatPubList>();
             
-            items = await Table.ToCollectionAsync();
-            foreach(ChatPublic k in items)
+            items = await Table.OrderByDescending(ChatPublic=> ChatPublic.CreatedAt ).ToCollectionAsync();
+            var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
+            var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter
+            string networkAdapterId = adapter.NetworkAdapterId.ToString();
+            
+            
+            foreach (ChatPublic k in items)
             {
-               test.Insert(0,k);
+                ChatPubList a = new ChatPubList();
+                a.Name = k.Name;
+                a.Message = k.Message;
+                if (a.Name == networkAdapterId)
+                {
+                    a.col = "White";
+                }
+                else
+                {
+                    a.col = "#FFFF003A";
+                }
+                test.Add(a);
             }
             lol.ItemsSource = test;
             test.CollectionChanged += test_CollectionChanged;
@@ -88,10 +104,10 @@ namespace MUGDApp
                 string networkAdapterId = adapter.NetworkAdapterId.ToString();
 
 
-                c.Name = "Test";
+                c.Name = networkAdapterId;
                 c.Message = message.Text;
                 message.Text = "";
-                c.CreatedAt = DateTime.Today;
+                c.CreatedAt = DateTime.Now;
                 await App.MobileService.GetTable<ChatPublic>().InsertAsync(c);
             }
         }

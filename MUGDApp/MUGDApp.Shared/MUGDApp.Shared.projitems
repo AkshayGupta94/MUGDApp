@@ -16,6 +16,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ChatPublic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ChatPubList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)datamodel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EventDetail.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EventList.cs" />
