@@ -83,6 +83,11 @@ namespace MUGDApp
             if (message.Text !="")
             {
                 ChatPublic c = new ChatPublic();
+                var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
+                var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter
+                string networkAdapterId = adapter.NetworkAdapterId.ToString();
+
+
                 c.Name = "Test";
                 c.Message = message.Text;
                 message.Text = "";
