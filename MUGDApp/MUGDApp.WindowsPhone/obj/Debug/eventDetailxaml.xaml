@@ -21,7 +21,7 @@
 
             <Pivot.HeaderTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding}"  Foreground="Black" FontSize="20" />
+                    <TextBlock Text="{Binding}"  RequestedTheme="Light" FontSize="20" />
                 </DataTemplate>
             </Pivot.HeaderTemplate>
             <PivotItem ScrollViewer.HorizontalScrollBarVisibility="Auto"  Header="ABOUT" >
@@ -60,7 +60,7 @@
             </PivotItem>-->
             <PivotItem Header="CONTACT" FontSize="12" >
 
-                <TextBlock HorizontalAlignment="Center" Width="250" Height="250" TextWrapping="Wrap" DataContext="{Binding}" VerticalAlignment="Center"/>
+                <TextBlock Foreground="Black" HorizontalAlignment="Center" Width="250" Height="250" TextWrapping="Wrap" Text="{Binding issuedBy}" VerticalAlignment="Center"/>
 
             </PivotItem>
         </Pivot>
