@@ -46,31 +46,7 @@ namespace MUGDApp
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
         /// 
-         async void channel_PushNotificationReceived(Windows.Networking.PushNotifications.PushNotificationChannel sender, Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs args)
-        {
-            if (args.ToastNotification.Content.InnerText.Contains("Event"))
-            {
-                //args.Cancel = true;
-
-            }
-            else
-            {
-                args.Cancel = true;
-                await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
-                {
-                    ChatPublic c = new ChatPublic();
-
-                c.Message = args.ToastNotification.Content.InnerText;
-                // c.Name = args.ToastNotification.Content.InnerText.Substring(index + 4, args.ToastNotification.Content.InnerText.Length - index + 5);
-               test.Insert(0, c);
-              
-
-                });
-
-                
-
-            }
-        }
+       
 
          private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
          {
@@ -87,19 +63,7 @@ namespace MUGDApp
 
         async void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            PushNotificationChannel channel;
-            channel = await Windows.Networking.PushNotifications.PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
-            try
-            {
-                await App.Mugd_appClient.GetPush().RegisterNativeAsync(channel.Uri);
-                //await App.Mugd_appClient.InvokeApiAsync("notifyAllUsers",
-                //    new JObject(new JProperty("toast", "Sample Toast")));
-            }
-            catch (Exception exception)
-            {
-                HandleRegisterException(exception);
-            }
-            channel.PushNotificationReceived+=channel_PushNotificationReceived;
+           
             test = new ObservableCollection<ChatPublic>();
             
             items = await Table.ToCollectionAsync();

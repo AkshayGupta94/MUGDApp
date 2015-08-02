@@ -8,7 +8,7 @@ namespace MUGDApp
 {
     class EventList
     {
-        public DateTime Date { get; set; }
+       
         public string Title { get; set; }
         public string Desc { get; set; }
         public string type { get; set; }
@@ -16,5 +16,8 @@ namespace MUGDApp
         public string issuedBy { get; set; }
         public string date { get; set; }
         public BitmapImage bitmapImage { get; set; }
+        public string back{ get; set; }
+        public double width { get; set; }
+        public double height { get; set; }
     }
 }

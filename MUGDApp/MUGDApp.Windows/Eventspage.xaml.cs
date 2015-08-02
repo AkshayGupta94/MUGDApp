@@ -47,7 +47,7 @@ namespace MUGDApp
                 EventList temp = new EventList();
                 temp.college = eve.college;
                 temp.Desc = eve.Desc;
-                temp.Date = eve.Date;
+                temp.date = eve.Date.Date.ToString();
                 temp.type = eve.type;
                 temp.issuedBy = eve.issuedBy;
                 //temp.date = eve.date;
