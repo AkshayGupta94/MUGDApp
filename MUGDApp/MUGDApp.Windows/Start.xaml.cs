@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Networking.PushNotifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -12,6 +13,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -25,16 +28,31 @@ namespace MUGDApp
         public Start()
         {
             this.InitializeComponent();
-           
+            Loaded += Start_Loaded;
         }
-
+        private async void Start_Loaded(object sender, RoutedEventArgs e)
+        {
+            PushNotificationChannel channel;
+            channel = await Windows.Networking.PushNotifications.PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+            try
+            {
+                await App.Mugd_appClient.GetPush().RegisterNativeAsync(channel.Uri);
+                //await App.Mugd_appClient.InvokeApiAsync("notifyAllUsers",
+                //    new JObject(new JProperty("toast", "Sample Toast")));
+            }
+            catch (Exception exception)
+            {
+                HandleRegisterException(exception);
+            }
+            channel.PushNotificationReceived += channel_PushNotificationReceived;
+        }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
 
-            protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             List<datamodel> myList = new List<datamodel>();
             datamodel temp = new datamodel();
@@ -93,7 +111,36 @@ namespace MUGDApp
             }
 
         }
-           
-     
+
+        async void channel_PushNotificationReceived(Windows.Networking.PushNotifications.PushNotificationChannel sender, Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs args)
+        {
+            if (args.ToastNotification.Content.InnerText.Contains("Event"))
+            {
+                //args.Cancel = true;
+
+            }
+            else
+            {
+                args.Cancel = true;
+                await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ChatPublic c = new ChatPublic();
+
+                    c.Message = args.ToastNotification.Content.InnerText;
+                    // c.Name = args.ToastNotification.Content.InnerText.Substring(index + 4, args.ToastNotification.Content.InnerText.Length - index + 5);
+                    MainPage.test.Insert(0, c);
+
+
+                });
+
+
+
+            }
+        }
+        private static void HandleRegisterException(Exception exception)
+        {
+
+        }
+
     }
 }
