@@ -22,6 +22,7 @@ namespace MUGDApp
     /// </summary>
     public sealed partial class eventDetailxaml : Page
     {
+         Events info1;
         public eventDetailxaml()
         {
             this.InitializeComponent();
@@ -29,6 +30,17 @@ namespace MUGDApp
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+
+            info1 = e.Parameter as Events;
+            EventDetail a = new EventDetail();
+            a.Desc = info1.Desc;
+            a.Title = info1.Title;
+            a.college = info1.college;
+            a.date =  info1.Date.Date.ToString("dd/MM/yyyy");
+            a.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(info1.ImageUri));
+            image2.Source = a.bitmapImage;
+            a.issuedBy = info1.issuedBy;
+            Pivott.DataContext = a;
 
         }
     }

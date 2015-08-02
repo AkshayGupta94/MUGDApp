@@ -8,41 +8,57 @@
     x:Class="MUGDApp.eventDetailxaml"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="0.1*"/>
-            <RowDefinition Height="0.1*"/>
-            <RowDefinition Height="0.1*"/>
-            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.6*"/>
+            
 
         </Grid.RowDefinitions>
-        <Image Height="200" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="{Binding}"/>
+        <Image x:Name="image2" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
-        <Pivot Title="{Binding}" Grid.Row="1">
+        <Pivot x:Name="Pivott"  Grid.Row="1">
+
             <Pivot.HeaderTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding}"  FontSize="20" />
+                    <TextBlock Text="{Binding}"  Foreground="Black" FontSize="20" />
                 </DataTemplate>
             </Pivot.HeaderTemplate>
-            <PivotItem  Header="About"  >
-               
-                <GridView x:Name="aboutc">
-                    <TextBlock TextWrapping="Wrap" Text="TextBlock" DataContext="{Binding}"/>
+            <PivotItem ScrollViewer.HorizontalScrollBarVisibility="Auto"  Header="ABOUT" >
 
-                </GridView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.7*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="0" FontWeight="Bold" Text="Title"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="1" Text="{Binding Title}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="2" Text="Venue"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="3" Text="{Binding college}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="4" Text="Date"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="5" Text="{Binding date}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="6" Text="Descritpion" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding Desc}" />
+
+                </Grid>
             </PivotItem>
-            <PivotItem Header="Venue" FontSize="12" >                
-                <GridView x:Name="venuec">
+            <!--<PivotItem Header="VENUE" FontSize="12" >                
+                <Grid>
                     <TextBlock TextWrapping="Wrap" DataContext="{Binding}" Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
+--><!--TODO: Add map control in future updates-->
+                    <!--<Maps:MapControl Height="231" Width="324" HorizontalAlignment="Center" VerticalAlignment="Stretch" />--><!--
 
-                    <Maps:MapControl Height="231" Width="324" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
 
-
-                </GridView>
-            </PivotItem>
-            <PivotItem Header="Contact Detail" FontSize="12" >
+                </Grid>
+            </PivotItem>-->
+            <PivotItem Header="CONTACT" FontSize="12" >
 
                 <TextBlock HorizontalAlignment="Center" Width="250" Height="250" TextWrapping="Wrap" DataContext="{Binding}" VerticalAlignment="Center"/>
 

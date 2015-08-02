@@ -52,6 +52,7 @@ namespace MUGDApp
             foreach (Events eve in items)
             {
                 EventList temp = new EventList();
+                temp.Id = eve.Id;
                 if (eve.college.Length <= 14)
                 {
                     temp.college = eve.college;
@@ -109,20 +110,23 @@ namespace MUGDApp
            
         }
 
-        private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            EventList a = event1.SelectedItem as EventList;
-            Frame.Navigate(typeof(eventDetailxaml), a);
-        }
+       
 
-        private void Menu_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
+       
 
         private void Menu_ItemClick_1(object sender, ItemClickEventArgs e)
         {
+            EventList a = e.ClickedItem as EventList;
+            Events lol = new Events();
+            foreach (Events eve in items)
+            {
+                if (a.Id == eve.Id)
+                {
+                    lol = eve;
+                }
+            }
 
+            Frame.Navigate(typeof(eventDetailxaml), lol);
         }
         
     }
