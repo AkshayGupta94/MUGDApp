@@ -28,7 +28,7 @@ namespace MUGDApp
     public sealed partial class MainPage : Page
     {
        
-        public static ObservableCollection<ChatPublic> test;
+        public static ObservableCollection<ChatPubList> test;
         private IMobileServiceTable<ChatPublic> Table = App.MobileService.GetTable<ChatPublic>();
         private MobileServiceCollection<ChatPublic, ChatPublic> items;
 
@@ -46,31 +46,7 @@ namespace MUGDApp
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
         /// 
-         async void channel_PushNotificationReceived(Windows.Networking.PushNotifications.PushNotificationChannel sender, Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs args)
-        {
-            if (args.ToastNotification.Content.InnerText.Contains("Event"))
-            {
-                //args.Cancel = true;
-
-            }
-            else
-            {
-                args.Cancel = true;
-                await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
-                {
-                    ChatPublic c = new ChatPublic();
-
-                c.Message = args.ToastNotification.Content.InnerText;
-                // c.Name = args.ToastNotification.Content.InnerText.Substring(index + 4, args.ToastNotification.Content.InnerText.Length - index + 5);
-               test.Insert(0, c);
-              
-
-                });
-
-                
-
-            }
-        }
+       
 
          private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
          {
@@ -99,16 +75,57 @@ namespace MUGDApp
             {
                 HandleRegisterException(exception);
             }
-            channel.PushNotificationReceived+=channel_PushNotificationReceived;
-            test = new ObservableCollection<ChatPublic>();
+            channel.PushNotificationReceived += channel_PushNotificationReceived;
+            test = new ObservableCollection<ChatPubList>();
             
-            items = await Table.ToCollectionAsync();
-            foreach(ChatPublic k in items)
+            items = await Table.OrderByDescending(ChatPublic=> ChatPublic.CreatedAt ).ToCollectionAsync();
+            var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
+            var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter
+            string networkAdapterId = adapter.NetworkAdapterId.ToString();
+            
+            
+            foreach (ChatPublic k in items)
             {
-               test.Insert(0,k);
+                ChatPubList a = new ChatPubList();
+                a.Name = k.Name;
+                a.Message = k.Message;
+                if (a.Name == networkAdapterId)
+                {
+                    a.col = "White";
+                }
+                else
+                {
+                    a.col = "#FFFF003A";
+                }
+                test.Add(a);
             }
             lol.ItemsSource = test;
             test.CollectionChanged += test_CollectionChanged;
+        }
+        async void channel_PushNotificationReceived(Windows.Networking.PushNotifications.PushNotificationChannel sender, Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs args)
+        {
+            if (args.ToastNotification.Content.InnerText.Contains("Event"))
+            {
+                //args.Cancel = true;
+
+            }
+            else
+            {
+                args.Cancel = true;
+                await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ChatPublic c = new ChatPublic();
+                    ChatPubList a = new ChatPubList();
+                    a.Message = args.ToastNotification.Content.InnerText;
+                    // c.Name = args.ToastNotification.Content.InnerText.Substring(index + 4, args.ToastNotification.Content.InnerText.Length - index + 5);
+                    MainPage.test.Insert(0, a);
+
+
+                });
+
+
+
+            }
         }
         private static void HandleRegisterException(Exception exception)
         {
@@ -119,10 +136,15 @@ namespace MUGDApp
             if (message.Text !="")
             {
                 ChatPublic c = new ChatPublic();
-                c.Name = "Test";
+                var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
+                var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter
+                string networkAdapterId = adapter.NetworkAdapterId.ToString();
+
+
+                c.Name = networkAdapterId;
                 c.Message = message.Text;
                 message.Text = "";
-                c.CreatedAt = DateTime.Today;
+                c.CreatedAt = DateTime.Now;
                 await App.MobileService.GetTable<ChatPublic>().InsertAsync(c);
             }
         }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Graphics.Display;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,6 +22,12 @@ namespace MUGDApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
+
+ 
+
+
+
     public sealed partial class Eventspage : Page
     {
         private IMobileServiceTable<Events> Table = App.MobileService.GetTable<Events>();
@@ -45,14 +52,39 @@ namespace MUGDApp
             foreach (Events eve in items)
             {
                 EventList temp = new EventList();
-                temp.college = eve.college;
-                temp.Desc = eve.Desc;
-                temp.Date = eve.Date;
+                temp.Id = eve.Id;
+                if (eve.college.Length <= 14)
+                {
+                    temp.college = eve.college;
+                }
+                else
+                { temp.college = eve.college.Substring(0, 14); }
+                
+                if (eve.Desc.Length <= 140)
+                {
+                    temp.Desc = eve.Desc;
+                }
+                else
+                { temp.Desc = eve.Desc.Substring(0,140); }
+                temp.date = eve.Date.Date.ToString("dd/MM/yyyy");
                 temp.type = eve.type;
+                if (temp.type == "MUGD")
+                {
+                    temp.back = "#FF00BFF3";
+                }
+                else
+                {
+                    temp.back = "#FFFFD700";
+                }
                 temp.issuedBy = eve.issuedBy;
                 //temp.date = eve.date;
                 temp.Title = eve.Title;
                 temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.ImageUri));
+                var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+
+                temp.width = Window.Current.Bounds.Width * scaleFactor*0.72;
+                temp.height = Window.Current.Bounds.Height * scaleFactor*0.3125;
+
                 item.Add(temp);
             }
             //List<Events> myList1 = new List<Events>();
@@ -64,7 +96,7 @@ namespace MUGDApp
             //temp1.ImageUri = "/Pics/area51.jpg";
             //myList1.Add(temp1);
             event1.DataContext = item;
-           
+          
         }
        
 
@@ -78,20 +110,23 @@ namespace MUGDApp
            
         }
 
-        private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            EventList a = event1.SelectedItem as EventList;
-            //Frame.Navigate(typeof(eventDetailxaml), a);
-        }
+       
 
-        private void Menu_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
+       
 
         private void Menu_ItemClick_1(object sender, ItemClickEventArgs e)
         {
+            EventList a = e.ClickedItem as EventList;
+            Events lol = new Events();
+            foreach (Events eve in items)
+            {
+                if (a.Id == eve.Id)
+                {
+                    lol = eve;
+                }
+            }
 
+            Frame.Navigate(typeof(eventDetailxaml), lol);
         }
         
     }

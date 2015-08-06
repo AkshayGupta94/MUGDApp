@@ -8,28 +8,59 @@
     x:Class="MUGDApp.eventDetailxaml"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot Title="{Binding}" FontSize="12">
-            <PivotItem Header="About">
-                <GridView x:Name="aboutc" >
-                    <Image Height="200" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding}"/>
-                    <TextBlock TextWrapping="Wrap" Text="TextBlock" DataContext="{Binding}"/>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.6*"/>
+            
 
-                </GridView>
+        </Grid.RowDefinitions>
+        <Image x:Name="image2" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+        <Pivot x:Name="Pivott"  Grid.Row="1">
+
+            <Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}"  RequestedTheme="Light" FontSize="20" />
+                </DataTemplate>
+            </Pivot.HeaderTemplate>
+            <PivotItem ScrollViewer.HorizontalScrollBarVisibility="Auto"  Header="ABOUT" >
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.7*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="0" FontWeight="Bold" Text="Title"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="1" Text="{Binding Title}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="2" Text="Venue"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="3" Text="{Binding college}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="4" Text="Date"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="5" Text="{Binding date}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="6" Text="Descritpion" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding Desc}" />
+
+                </Grid>
             </PivotItem>
-            <PivotItem Header="Venue" FontSize="12" >                
-                <GridView x:Name="venuec">
+            <!--<PivotItem Header="VENUE" FontSize="12" >                
+                <Grid>
                     <TextBlock TextWrapping="Wrap" DataContext="{Binding}" Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
+--><!--TODO: Add map control in future updates-->
+                    <!--<Maps:MapControl Height="231" Width="324" HorizontalAlignment="Center" VerticalAlignment="Stretch" />--><!--
 
-                    <Maps:MapControl Height="231" Width="324" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
 
+                </Grid>
+            </PivotItem>-->
+            <PivotItem Header="CONTACT" FontSize="12" >
 
-                </GridView>
-            </PivotItem>
-            <PivotItem Header="Contact Detail" FontSize="12" >
-
-                <TextBlock HorizontalAlignment="Center" Width="250" Height="250" TextWrapping="Wrap" DataContext="{Binding}" VerticalAlignment="Center"/>
+                <TextBlock Foreground="Black" HorizontalAlignment="Center" Width="250" Height="250" TextWrapping="Wrap" Text="{Binding issuedBy}" VerticalAlignment="Center"/>
 
             </PivotItem>
         </Pivot>
