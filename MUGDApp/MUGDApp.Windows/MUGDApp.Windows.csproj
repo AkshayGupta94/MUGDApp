@@ -104,6 +104,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="eventDetail.xaml.cs">
+      <DependentUpon>eventDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Eventspage.xaml.cs">
       <DependentUpon>Eventspage.xaml</DependentUpon>
     </Compile>
@@ -135,6 +138,10 @@
     <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="eventDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Eventspage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

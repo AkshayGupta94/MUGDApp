@@ -20,13 +20,12 @@ namespace MUGDApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class eventDetailxaml : Page
+    public sealed partial class eventDetail : Page
     {
-         Events info1;
-        public eventDetailxaml()
+        Events info1;
+        public eventDetail()
         {
             this.InitializeComponent();
-           
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -36,7 +35,7 @@ namespace MUGDApp
             a.Desc = info1.Desc;
             a.Title = info1.Title;
             a.college = info1.college;
-            a.date =  info1.Date.Date.ToString("dd/MM/yyyy");
+            a.date = info1.Date.Date.ToString("dd/MM/yyyy");
             a.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(info1.ImageUri));
             image2.Source = a.bitmapImage;
             a.issuedBy = info1.issuedBy;

@@ -60,8 +60,28 @@
             </PivotItem>-->
             <PivotItem Header="CONTACT" FontSize="12" >
 
-                <TextBlock Foreground="Black" HorizontalAlignment="Center" Width="250" Height="250" TextWrapping="Wrap" Text="{Binding issuedBy}" VerticalAlignment="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.15*"/>
+                        <RowDefinition Height="0.7*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="0" FontWeight="Bold" Text="Name"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="1" Text="{Binding issuedBy}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="2" Text="Mobile"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="3" Text="{Binding mobile}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="4" Text="Email"/>
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="5" Text="{Binding Email}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="6" Text="Url" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding Desc}" />
 
+                </Grid>
+                
             </PivotItem>
         </Pivot>
 

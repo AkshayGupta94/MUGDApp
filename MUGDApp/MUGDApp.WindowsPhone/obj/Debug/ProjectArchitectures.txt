@@ -1,1 +1,1 @@
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\MUGDApp.WindowsPhone.csproj;neutral
+C:\Users\garv\Desktop\asppro\MUGDApp-master\MUGDApp\MUGDApp.WindowsPhone\MUGDApp.WindowsPhone.csproj;neutral

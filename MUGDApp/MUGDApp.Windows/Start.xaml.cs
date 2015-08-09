@@ -122,13 +122,14 @@ namespace MUGDApp
             else
             {
                 args.Cancel = true;
+                // chat problem 
                 await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
                     ChatPublic c = new ChatPublic();
-
-                    c.Message = args.ToastNotification.Content.InnerText;
+                    ChatPubList a = new ChatPubList();
+                    a.Message = args.ToastNotification.Content.InnerText;
                     // c.Name = args.ToastNotification.Content.InnerText.Substring(index + 4, args.ToastNotification.Content.InnerText.Length - index + 5);
-                    MainPage.test.Insert(0, c);
+                    MainPage.test.Insert(0, a);
 
 
                 });

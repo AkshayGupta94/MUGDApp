@@ -21,9 +21,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)EventDetail.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EventList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Events.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)idea.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)loginMember.xaml.cs">
       <DependentUpon>loginMember.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Notice.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Pics\AgNJA8Cx26Wpjixy8zD1gBsYNVNuQd8repz6dDT3hNY-.jpg" />

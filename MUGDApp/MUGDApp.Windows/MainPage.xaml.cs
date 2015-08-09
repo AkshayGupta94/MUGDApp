@@ -26,7 +26,7 @@ namespace MUGDApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public static ObservableCollection<ChatPublic> test;
+        public static ObservableCollection<ChatPubList> test;
         private IMobileServiceTable<ChatPublic> Table = App.MobileService.GetTable<ChatPublic>();
         private MobileServiceCollection<ChatPublic, ChatPublic> items;
 
@@ -67,16 +67,71 @@ namespace MUGDApp
 
         async void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-           
-            test = new ObservableCollection<ChatPublic>();
-            
-            items = await Table.ToCollectionAsync();
-            foreach(ChatPublic k in items)
+
+            PushNotificationChannel channel;
+            channel = await Windows.Networking.PushNotifications.PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+            try
             {
-               test.Insert(0,k);
+                await App.Mugd_appClient.GetPush().RegisterNativeAsync(channel.Uri);
+                //await App.Mugd_appClient.InvokeApiAsync("notifyAllUsers",
+                //    new JObject(new JProperty("toast", "Sample Toast")));
+            }
+            catch (Exception exception)
+            {
+                HandleRegisterException(exception);
+            }
+            channel.PushNotificationReceived += channel_PushNotificationReceived;
+            test = new ObservableCollection<ChatPubList>();
+
+            items = await Table.OrderByDescending(ChatPublic => ChatPublic.CreatedAt).ToCollectionAsync();
+            var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
+            var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter
+            string networkAdapterId = adapter.NetworkAdapterId.ToString();
+
+            foreach (ChatPublic k in items)
+            {
+                ChatPubList a = new ChatPubList();
+                a.Name = k.Name;
+                a.Message = k.Message;
+                if (a.Name == networkAdapterId)
+                {
+                    a.col = "White";
+                }
+                else
+                {
+                    a.col = "#FFFF003A";
+                }
+                test.Add(a);
             }
             lol.ItemsSource = test;
             test.CollectionChanged += test_CollectionChanged;
+            
+
+        }
+        async void channel_PushNotificationReceived(Windows.Networking.PushNotifications.PushNotificationChannel sender, Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs args)
+        {
+            if (args.ToastNotification.Content.InnerText.Contains("Event"))
+            {
+                //args.Cancel = true;
+
+            }
+            else
+            {
+                args.Cancel = true;
+                await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ChatPublic c = new ChatPublic();
+                    ChatPubList a = new ChatPubList();
+                    a.Message = args.ToastNotification.Content.InnerText;
+                    // c.Name = args.ToastNotification.Content.InnerText.Substring(index + 4, args.ToastNotification.Content.InnerText.Length - index + 5);
+                    MainPage.test.Insert(0, a);
+
+
+                });
+
+
+
+            }
         }
         private static void HandleRegisterException(Exception exception)
         {
@@ -84,11 +139,20 @@ namespace MUGDApp
         }
         private async void Send_Click(object sender, RoutedEventArgs e)
         {
-            ChatPublic c = new ChatPublic();
-            c.Name = "Test";
-            c.Message = message.Text;
-            c.CreatedAt = DateTime.Today;
-            await App.MobileService.GetTable<ChatPublic>().InsertAsync(c);
+            if (message.Text != "")
+            {
+                ChatPublic c = new ChatPublic();
+                var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
+                var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter
+                string networkAdapterId = adapter.NetworkAdapterId.ToString();
+
+
+                c.Name = networkAdapterId;
+                c.Message = message.Text;
+                message.Text = "";
+                c.CreatedAt = DateTime.Now;
+                await App.MobileService.GetTable<ChatPublic>().InsertAsync(c);
+            }
         }
     }
 }

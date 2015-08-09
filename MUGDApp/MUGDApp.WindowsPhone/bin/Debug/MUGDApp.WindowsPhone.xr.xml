@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
+<Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="issuedBy" />
     <RootPropertyPathName Name="Desc" />
+    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="mobile" />
+    <RootPropertyPathName Name="issuedBy" />
     <RootPropertyPathName Name="date" />
     <RootPropertyPathName Name="college" />
     <RootPropertyPathName Name="Title" />
@@ -66,15 +68,14 @@
       <RootProperty Name="Text" />
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Opacity" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Style" />
