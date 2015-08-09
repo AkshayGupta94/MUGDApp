@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Roots >
+<Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Desc" />
     <RootPropertyPathName Name="Email" />
@@ -162,6 +162,7 @@
     </RootType>
     <RootType FullName="MUGDApp.MainPage" />
     <RootType FullName="MUGDApp.Start" />
+    <RootType FullName="MUGDApp.UserVoice" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="HorizontalAlignment" />
