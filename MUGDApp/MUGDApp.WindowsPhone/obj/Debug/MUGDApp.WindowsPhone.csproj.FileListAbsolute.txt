@@ -349,14 +349,6 @@ C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\q
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\ProjectArchitectures.txt
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles.intermediate
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles.intermediate
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles.intermediate
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml.intermediate
 C:\Users\garv\Desktop\asppro\MUGDApp-master\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\MUGDApp.WindowsPhone.exe.config
 C:\Users\garv\Desktop\asppro\MUGDApp-master\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\App.xbf
 C:\Users\garv\Desktop\asppro\MUGDApp-master\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\loginMember.xbf
@@ -425,3 +417,8 @@ C:\Users\garv\Desktop\asppro\MUGDApp-master\MUGDApp\MUGDApp.WindowsPhone\obj\Deb
 C:\Users\garv\Desktop\asppro\MUGDApp-master\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\garv\Desktop\asppro\MUGDApp-master\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\garv\Desktop\asppro\MUGDApp-master\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\UserVoice.g.i.cs
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\UserVoice.g.cs
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\UserVoice.xaml
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Debug\UserVoice.xbf
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Debug\UserVoice.xbf

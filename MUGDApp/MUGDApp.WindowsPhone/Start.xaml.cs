@@ -133,7 +133,7 @@ namespace MUGDApp
             {
                 Frame.Navigate(typeof(MainPage));
             }
-            else if (lolol.title == "Idea's")
+            else if (lolol.title == "User Voice")
             {
                 Frame.Navigate(typeof(UserVoice));
             }
