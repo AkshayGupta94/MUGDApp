@@ -78,7 +78,7 @@
                     <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="4" Text="Email"/>
                     <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="5" Text="{Binding Email}" />
                     <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="6" Text="Url" />
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding Desc}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding url}" />
 
                 </Grid>
                 

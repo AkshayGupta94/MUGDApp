@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Desc" />
+    <RootPropertyPathName Name="url" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="mobile" />
     <RootPropertyPathName Name="issuedBy" />
+    <RootPropertyPathName Name="Desc" />
     <RootPropertyPathName Name="date" />
     <RootPropertyPathName Name="college" />
     <RootPropertyPathName Name="Title" />
@@ -17,6 +18,9 @@
     <RootPropertyPathName Name="col" />
     <RootPropertyPathName Name="title" />
     <RootPropertyPathName Name="src" />
+    <RootPropertyPathName Name="option3" />
+    <RootPropertyPathName Name="option2" />
+    <RootPropertyPathName Name="option1" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />

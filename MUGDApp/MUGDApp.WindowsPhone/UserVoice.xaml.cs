@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,8 @@ namespace MUGDApp
     /// </summary>
     public sealed partial class UserVoice : Page
     {
+        private IMobileServiceTable<idea> Table = App.MobileService.GetTable<idea>();
+        private MobileServiceCollection<idea, idea> items;
         public UserVoice()
         {
             this.InitializeComponent();
@@ -32,8 +35,41 @@ namespace MUGDApp
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
+            items = await Table.ToCollectionAsync();
+            //List<idea> ai = new List<idea>();
+            //idea i = new idea();
+            //i.Title = "Test";
+            //i.option1 = "Hello1";
+            //i.option2 = "Hello2";
+            //i.option3 = "Hello3";
+            //ai.Add(i);
+            Voice.ItemsSource = items;
+        }
+
+        private async void Option1_Click(object sender, RoutedEventArgs e)
+        {
+            Button temp = sender as Button;
+            idea i = temp.DataContext as idea;
+            i.Countoption1++;
+            await Table.UpdateAsync(i);
+        }
+
+        private async void Option2_Click(object sender, RoutedEventArgs e)
+        {
+            Button temp = sender as Button;
+            idea i = temp.DataContext as idea;
+            i.Countoption2++;
+            await Table.UpdateAsync(i);
+        }
+
+        private async void Option3_Click(object sender, RoutedEventArgs e)
+        {
+            Button temp = sender as Button;
+            idea i = temp.DataContext as idea;
+            i.Countoption3++;
+            await Table.UpdateAsync(i);
         }
     }
 }

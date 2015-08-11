@@ -10,25 +10,27 @@
     <Page.Resources>
         <DataTemplate x:Key="Standard3100x260ItemTemplate">
             <Border BorderThickness="1,1,1,6" BorderBrush="#FFE7E7E7"  Margin="10,10">
-                <Grid x:Name="test" VerticalAlignment="Center" Margin="10,10" HorizontalAlignment="Stretch" Height="{Binding height}" Width="{Binding width}">
+                <Grid x:Name="test" Margin="10,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="0.75*"/>
+                        <RowDefinition Height="0.65*"/>
                         <RowDefinition Height="0.05*"/>
-
-                        <RowDefinition Height="0.10*"/>
-                        <RowDefinition Height="0.10*"/>
+                        <RowDefinition Height="0.30*"/>
 
 
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.7*"/>
-                        <ColumnDefinition Width="0.3*"/>
-
+                        <ColumnDefinition Width="0.1*"/>
+                        <ColumnDefinition Width="0.1*"/>
+                        <ColumnDefinition Width="0.1*"/>
                     </Grid.ColumnDefinitions>
-                    <Image x:Name="eventImg" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch"  Source="{Binding bitmapImage}" Stretch="Uniform"/>
-                    <TextBlock x:Name="title" TextAlignment="Center" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Grid.ColumnSpan="3" FontSize="20" Text="{Binding Title}" Foreground="Black"/>
-                    <TextBox IsReadOnly="True" Background="{Binding back}"  x:Name="spons"  Foreground="White" TextAlignment="Center" Grid.RowSpan="2" Grid.Row="2" Grid.Column="1" FontSize="17" HorizontalAlignment="Center" Text="{Binding type}" SelectionHighlightColor="{x:Null}" />
-                    <TextBlock x:Name="date" TextAlignment="Center" Grid.Row="3" Foreground="Black" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  Text="{Binding date}"/>
+                    
+                    <TextBlock x:Name="Question" TextAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" FontSize="28" Text="{Binding Title}" Foreground="Black"/>
+                    <Button Foreground="Green"    x:Name="Option1" Content="{Binding option1}" Grid.Row="2" Grid.Column="0" Height="Auto" HorizontalAlignment="Stretch" Click="Option1_Click" Width="auto"/>
+                    <Button Foreground="Red"  x:Name="Option2" Content="{Binding option2}" Grid.Row="2" Grid.Column="1" Height="Auto" HorizontalAlignment="Stretch" Click="Option2_Click" Width="auto"/>
+                    <Button Foreground="Black"  x:Name="Option3" Content="{Binding option3}" Grid.Row="2" Grid.Column="2" Height="Auto" HorizontalAlignment="Stretch" Click="Option3_Click" Width="auto"/>
+
+                    <!--<TextBox IsReadOnly="True" Background="{Binding back}"  x:Name="spons"  Foreground="White" TextAlignment="Center" Grid.RowSpan="2" Grid.Row="2" Grid.Column="1" FontSize="17" HorizontalAlignment="Center" Text="{Binding type}" SelectionHighlightColor="{x:Null}" />
+                    <TextBlock x:Name="date" TextAlignment="Center" Grid.Row="3" Foreground="Black" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  Text="{Binding date}"/>-->
 
                 </Grid>
             </Border>
@@ -46,7 +48,7 @@
         <GridView
                         Grid.Row="1"
                         HorizontalAlignment="Stretch"
-                        x:Name="event1"
+                        x:Name="Voice"
                        VerticalAlignment="Stretch"
                        
                         ItemsSource="{Binding}"
