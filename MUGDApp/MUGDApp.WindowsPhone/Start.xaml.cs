@@ -135,7 +135,7 @@ namespace MUGDApp
             }
             else if (lolol.title == "Idea's")
             {
-                Frame.Navigate(typeof(Eventspage));
+                Frame.Navigate(typeof(UserVoice));
             }
             else if (lolol.title == "Member Login")
             {
