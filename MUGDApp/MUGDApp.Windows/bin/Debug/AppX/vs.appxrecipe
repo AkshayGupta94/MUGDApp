@@ -28,7 +28,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.exe">
       <PackagePath>MUGDApp.Windows.exe</PackagePath>
-      <Modified>2015-08-11T17:45:00.974</Modified>
+      <Modified>2015-08-11T18:09:46.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
@@ -136,7 +136,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\UserVoice.xbf">
       <PackagePath>UserVoice.xbf</PackagePath>
-      <Modified>2015-08-11T17:42:50.955</Modified>
+      <Modified>2015-08-11T18:09:45.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
       <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>

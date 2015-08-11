@@ -429,11 +429,3 @@ C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\eventD
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\eventDetail.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\UserVoice.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\UserVoice.xbf
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\layout.resfiles.intermediate
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\Resources.resfiles.intermediate
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\pri.resfiles.intermediate
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\Microsoft.WindowsAzure.Mobile\priconfig.xml.intermediate
