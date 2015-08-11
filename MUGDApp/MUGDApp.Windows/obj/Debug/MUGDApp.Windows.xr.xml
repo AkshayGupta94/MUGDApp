@@ -15,6 +15,9 @@
     <RootPropertyPathName Name="col" />
     <RootPropertyPathName Name="title" />
     <RootPropertyPathName Name="src" />
+    <RootPropertyPathName Name="option3" />
+    <RootPropertyPathName Name="option2" />
+    <RootPropertyPathName Name="option1" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -142,8 +145,10 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="BorderBrush" />
       <RootEvent Name="Click" />
     </RootType>
