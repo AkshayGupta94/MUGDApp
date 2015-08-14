@@ -7,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -40,12 +41,16 @@ namespace MUGDApp
         /// This parameter is typically used to configure the page.</param>
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            items = await Table.Where(Events
-                => Events.ImageUri != null).ToCollectionAsync();
+            int f = 1;
             List<EventList> item = new List<EventList>();
+            EventList temp = new EventList();
+            try 
+            { 
+            items = await Table.Where(Events
+                => Events.ImageUri != null).ToCollectionAsync();         
             foreach (Events eve in items)
             {
-                EventList temp = new EventList();
+               
                 if (eve.college.Length <= 14)
                 {
                     temp.college = eve.college;
@@ -75,13 +80,28 @@ namespace MUGDApp
                 temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.ImageUri));
               
 
-                item.Add(temp);
+              
                 
 
             }
             event1.DataContext = item;
         }
-       
+            catch(Exception)
+            {
+                f = 1;
+            }
+            if (f == 1)
+            {
+                MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
+                m.ShowAsync();
+
+            }
+            else
+            {
+                item.Add(temp);
+            }
+        }
+        
 
         private void eventGrid_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {

@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -40,6 +41,7 @@ namespace MUGDApp
         /// This parameter is typically used to configure the page.</param>
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
+            int f = 0;
             StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
             StorageFile sampleFile =
                 await folder.CreateFileAsync("Sample.txt", CreationCollisionOption.OpenIfExists);
@@ -52,8 +54,8 @@ namespace MUGDApp
             finally
             {
 
-
-                items = await Table.ToCollectionAsync();
+                f = 1;
+               
                 //List<idea> ai = new List<idea>();
                 //idea i = new idea();
                 //i.Title = "Test";
@@ -61,6 +63,17 @@ namespace MUGDApp
                 //i.option2 = "Hello2";
                 //i.option3 = "Hello3";
                 //ai.Add(i);
+                
+            }
+            if (f == 1)
+            {
+                MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
+                m.ShowAsync();
+
+            }
+            else
+            {
+                items = await Table.ToCollectionAsync();
                 Voice.ItemsSource = items;
             }
         }

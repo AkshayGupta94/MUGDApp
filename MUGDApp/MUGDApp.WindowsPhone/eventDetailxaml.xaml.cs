@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,11 +29,14 @@ namespace MUGDApp
             this.InitializeComponent();
            
         }
+        int f = 0;
+        EventDetail a = new EventDetail();
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            try 
+            { 
 
-            info1 = e.Parameter as Events;
-            EventDetail a = new EventDetail();
+            info1 = e.Parameter as Events;  
             a.Desc = info1.Desc;
             a.Title = info1.Title;
             a.college = info1.college;
@@ -43,8 +47,22 @@ namespace MUGDApp
             a.url = info1.url;
             a.mobile = info1.mobile;
             a.Email = info1.email;
-            Pivott.DataContext = a;
 
+             }
+            catch(Exception e1)
+            {
+                f = 1;
+            }
+            if(f==1)
+            {
+                MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
+              m.ShowAsync();
+
+            }
+            else
+            {
+                Pivott.DataContext = a;
+            }
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -29,9 +30,11 @@ namespace MUGDApp
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
-            info1 = e.Parameter as Events;
+            int f = 0;
             EventDetail a = new EventDetail();
+            try
+            { 
+            info1 = e.Parameter as Events;         
             a.Desc = info1.Desc;
             a.Title = info1.Title;
             a.college = info1.college;
@@ -42,8 +45,21 @@ namespace MUGDApp
             a.url = info1.url;
             a.mobile = info1.mobile;
             a.Email = info1.email;
-            Pivott.DataContext = a;
+            }
+            catch(Exception)
+            {
+                f = 1;
+            }
+            if (f == 1)
+            {
+                MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
+                m.ShowAsync();
 
+            }
+            else
+            {
+                Pivott.DataContext = a;
+            }
         }
     }
 }
