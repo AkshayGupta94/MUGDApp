@@ -10,14 +10,16 @@
 
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.4*"/>
-            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.35*"/>
+            <RowDefinition Height="0.55*"/>
             
 
         </Grid.RowDefinitions>
-        <Image x:Name="image2" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Image HorizontalAlignment="Left" Tapped="Image_Tapped" Source="\Pics\Button_Back.png" Height="100" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image2" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
-        <Pivot x:Name="Pivott"  Grid.Row="1">
+        <Pivot x:Name="Pivott"  Grid.Row="2" Margin="0,28.167,0,0">
 
             <Pivot.HeaderTemplate>
                 <DataTemplate>

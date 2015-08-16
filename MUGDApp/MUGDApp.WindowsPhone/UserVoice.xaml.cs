@@ -50,6 +50,7 @@ namespace MUGDApp
             {
                 string testlol = await Windows.Storage.FileIO.ReadTextAsync(sampleFile);
                 ids = JsonConvert.DeserializeObject<List<string>>(testlol);
+                items = await Table.ToCollectionAsync();
             }
             catch (Exception ex)
             {
@@ -64,12 +65,12 @@ namespace MUGDApp
                 if (f == 1)
                 {
                     MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                    await m.ShowAsync();
+                    m.ShowAsync();
 
                 }
                 else
                 {
-                    items = await Table.ToCollectionAsync();
+
                     Voice.ItemsSource = items;
                 }
             }

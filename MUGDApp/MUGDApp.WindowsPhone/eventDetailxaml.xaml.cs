@@ -58,7 +58,7 @@ namespace MUGDApp
                 if (f == 1)
                 {
                     MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                    await m.ShowAsync();
+                    m.ShowAsync();
 
                 }
                 else
@@ -66,6 +66,10 @@ namespace MUGDApp
                     Pivott.DataContext = a;
                 }
             }
+        }
+        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Eventspage));
         }
     }
 }

@@ -8,8 +8,8 @@ namespace MUGDApp
     {
         public string Name { get; set; }
         public string Message { get; set; }
-    
-        
+        public string time { get; set; }
+        public string date { get; set; }
         public string col { get; set; }
 
     }

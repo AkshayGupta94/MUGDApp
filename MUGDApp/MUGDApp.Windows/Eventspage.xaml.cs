@@ -95,7 +95,7 @@ namespace MUGDApp
                 if (f == 1)
                 {
                     MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                    await m.ShowAsync();
+                    m.ShowAsync();
 
                 }
                 else
@@ -111,6 +111,10 @@ namespace MUGDApp
            
         }
 
+        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Start));
+        }
      
 
         private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)

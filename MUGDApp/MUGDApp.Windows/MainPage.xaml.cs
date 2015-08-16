@@ -39,7 +39,10 @@ namespace MUGDApp
 
         }
 
-        
+        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Start));
+        }
 
         void test_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
         {
@@ -72,15 +75,19 @@ namespace MUGDApp
             foreach (ChatPublic k in items)
             {
                 ChatPubList a = new ChatPubList();
+                a.date = k.CreatedAt.Date.ToString();
+                a.time = k.CreatedAt.TimeOfDay.ToString();
+                a.time = a.time.Remove(5);
+                a.date = a.date.Remove(10);
                 a.Name = k.Name;
                 a.Message = k.Message;
                 if (a.Name == networkAdapterId)
                 {
-                    a.col = "White";
+                    a.col = "#FF9B0E00";
                 }
                 else
                 {
-                    a.col = "#FFFF003A";
+                    a.col = "#FF5D340C";
                 }
                 test.Add(a);
             }
@@ -104,7 +111,10 @@ namespace MUGDApp
                 {
 
                     ChatPubList a = new ChatPubList();
-
+                    a.date = items[0].CreatedAt.Date.ToString();
+                    a.time = items[0].CreatedAt.TimeOfDay.ToString();
+                    a.time = a.time.Remove(5);
+                    a.date = a.date.Remove(10);
                     a.Message = items[0].Message;
                     a.Name = items[0].Name;
                     var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
@@ -112,11 +122,11 @@ namespace MUGDApp
                     string networkAdapterId = adapter.NetworkAdapterId.ToString();
                     if (a.Name == networkAdapterId)
                     {
-                        a.col = "White";
+                        a.col = "#FF9B0E00";
                     }
                     else
                     {
-                        a.col = "#FFFF003A";
+                        a.col = "#FF5D340C";
                     }
                     MainPage.test.Insert(0, a);
 

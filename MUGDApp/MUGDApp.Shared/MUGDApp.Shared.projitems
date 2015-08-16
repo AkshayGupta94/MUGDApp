@@ -30,6 +30,7 @@
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Pics\AgNJA8Cx26Wpjixy8zD1gBsYNVNuQd8repz6dDT3hNY-.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Pics\area51.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Pics\Button_Back.png" />
     <Content Include="$(MSBuildThisFileDirectory)Pics\idea.png" />
     <Content Include="$(MSBuildThisFileDirectory)Pics\chat.png" />
     <Content Include="$(MSBuildThisFileDirectory)Pics\Event.png" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Roots xmlns="clr-namespace:Microsoft.Xaml.Tools.XamlCompiler.RootLog;assembly=Microsoft.Windows.UI.Xaml.81.Build.Tasks">
+<Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Desc" />
     <RootPropertyPathName Name="Email" />
@@ -11,8 +11,9 @@
     <RootPropertyPathName Name="back" />
     <RootPropertyPathName Name="type" />
     <RootPropertyPathName Name="bitmapImage" />
-    <RootPropertyPathName Name="Message" />
     <RootPropertyPathName Name="col" />
+    <RootPropertyPathName Name="time" />
+    <RootPropertyPathName Name="Message" />
     <RootPropertyPathName Name="title" />
     <RootPropertyPathName Name="src" />
     <RootPropertyPathName Name="option3" />
@@ -38,6 +39,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetColumnSpan" />
@@ -50,11 +53,12 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Source" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Stretch" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Opacity" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Hub">
       <RootProperty Name="HeaderTemplate" />
@@ -160,18 +164,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Opacity" />
-      <RootProperty Name="Background" />
       <RootProperty Name="ItemTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
-      <RootProperty Name="EndPoint" />
-      <RootProperty Name="StartPoint" />
-      <RootProperty Name="GradientStops" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
-      <RootProperty Name="Color" />
-      <RootProperty Name="Offset" />
     </RootType>
     <RootType FullName="MUGDApp.MainPage" />
     <RootType FullName="MUGDApp.Start" />
