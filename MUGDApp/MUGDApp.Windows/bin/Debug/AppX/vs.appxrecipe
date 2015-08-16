@@ -28,7 +28,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.exe">
       <PackagePath>MUGDApp.Windows.exe</PackagePath>
-      <Modified>2015-08-11T18:09:46.088</Modified>
+      <Modified>2015-08-16T07:46:18.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
@@ -108,7 +108,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MUGDApp.Windows.xr.xml">
       <PackagePath>MUGDApp.Windows.xr.xml</PackagePath>
-      <Modified>2015-08-11T17:42:50.661</Modified>
+      <Modified>2015-08-16T07:41:02.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -116,7 +116,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\loginMember.xbf">
       <PackagePath>loginMember.xbf</PackagePath>
-      <Modified>2015-08-02T07:44:48.000</Modified>
+      <Modified>2015-08-16T07:36:24.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\eventDetail.xbf">
       <PackagePath>eventDetail.xbf</PackagePath>
@@ -128,7 +128,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-08-09T09:13:30.000</Modified>
+      <Modified>2015-08-16T07:46:18.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\Start.xbf">
       <PackagePath>Start.xbf</PackagePath>
@@ -256,7 +256,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-08-11T17:45:01.591</Modified>
+      <Modified>2015-08-16T07:44:45.237</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

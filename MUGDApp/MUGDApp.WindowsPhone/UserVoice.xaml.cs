@@ -56,13 +56,7 @@ namespace MUGDApp
 
                 f = 1;
 
-                //List<idea> ai = new List<idea>();
-                //idea i = new idea();
-                //i.Title = "Test";
-                //i.option1 = "Hello1";
-                //i.option2 = "Hello2";
-                //i.option3 = "Hello3";
-                //ai.Add(i);
+               
 
             }
             finally
@@ -70,7 +64,7 @@ namespace MUGDApp
                 if (f == 1)
                 {
                     MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                    m.ShowAsync();
+                    await m.ShowAsync();
 
                 }
                 else

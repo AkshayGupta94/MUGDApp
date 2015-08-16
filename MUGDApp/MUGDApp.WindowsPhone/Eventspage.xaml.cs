@@ -53,7 +53,7 @@ namespace MUGDApp
             {
                 items = await Table.Where(Events
                     => Events.ImageUri != null).ToCollectionAsync();
-              
+
                 foreach (Events eve in items)
                 {
                     EventList temp = new EventList();
@@ -100,20 +100,23 @@ namespace MUGDApp
                 //temp1.Title = "this is title";
                 //temp1.ImageUri = "/Pics/area51.jpg";
                 //myList1.Add(temp1);
-                
+
             }
-            catch(Exception e1)
+            catch (Exception e1)
             {
                 f = 1;
             }
-            if(f==1)
+            finally
             {
-                MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                m.ShowAsync();
-            }
-            else
-            {
-                event1.DataContext = item;
+                if (f == 1)
+                {
+                    MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
+                    await m.ShowAsync();
+                }
+                else
+                {
+                    event1.DataContext = item;
+                }
             }
         }
        

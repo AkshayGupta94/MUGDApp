@@ -25,6 +25,9 @@ namespace MUGDApp
     /// </summary>
     public sealed partial class Start : Page
     {
+        public static PushNotificationChannel channel;
+        private IMobileServiceTable<ChatPublic> Table = App.MobileService.GetTable<ChatPublic>();
+        private MobileServiceCollection<ChatPublic, ChatPublic> items;
         public Start()
         {
             this.InitializeComponent();
@@ -34,7 +37,7 @@ namespace MUGDApp
 
         private async void Start_Loaded(object sender, RoutedEventArgs e)
         {
-            PushNotificationChannel channel;
+           
             channel = await Windows.Networking.PushNotifications.PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
             try
             {
@@ -64,21 +67,26 @@ namespace MUGDApp
             else
             {
                 args.Cancel = true;
-                await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
-                {
-                    ChatPublic c = new ChatPublic();
-                    ChatPubList a = new ChatPubList();
-                    a.Message = args.ToastNotification.Content.InnerText;
-                    // c.Name = args.ToastNotification.Content.InnerText.Substring(index + 4, args.ToastNotification.Content.InnerText.Length - index + 5);
-                    MainPage.test.Insert(0, a);
+                //items = await Table.OrderByDescending(ChatPublic => ChatPublic.CreatedAt).Take(1).ToCollectionAsync();
 
+                //await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                //{
 
-                });
+                //    ChatPubList a = new ChatPubList();
+
+                //    a.Message = items[0].Message;
+                //    a.Name = items[0].Name;
+                //    MainPage.test.Insert(0, a);
+
+                //});
 
 
 
             }
+
+
         }
+        
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>

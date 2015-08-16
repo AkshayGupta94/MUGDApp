@@ -44,61 +44,64 @@ namespace MUGDApp
             int f = 1;
             List<EventList> item = new List<EventList>();
             EventList temp = new EventList();
-            try 
-            { 
-            items = await Table.Where(Events
-                => Events.ImageUri != null).ToCollectionAsync();         
-            foreach (Events eve in items)
+            try
             {
-               
-                if (eve.college.Length <= 14)
+                items = await Table.Where(Events
+                    => Events.ImageUri != null).ToCollectionAsync();
+                foreach (Events eve in items)
                 {
-                    temp.college = eve.college;
-                }
-                else
-                { temp.college = eve.college.Substring(0, 14); }
 
-                if (eve.Desc.Length <= 140)
-                {
-                    temp.Desc = eve.Desc;
-                }
-                else
-                { temp.Desc = eve.Desc.Substring(0, 140); }
-                temp.date = eve.Date.Date.ToString("dd/MM/yyyy");
-                temp.type = eve.type;
-                if (temp.type == "MUGD")
-                {
-                    temp.back = "#FF00BFF3";
-                }
-                else
-                {
-                    temp.back = "#FFFFD700";
-                }
-                temp.issuedBy = eve.issuedBy;
-                //temp.date = eve.date;
-                temp.Title = eve.Title;
-                temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.ImageUri));
-              
+                    if (eve.college.Length <= 14)
+                    {
+                        temp.college = eve.college;
+                    }
+                    else
+                    { temp.college = eve.college.Substring(0, 14); }
 
-              
-                
+                    if (eve.Desc.Length <= 140)
+                    {
+                        temp.Desc = eve.Desc;
+                    }
+                    else
+                    { temp.Desc = eve.Desc.Substring(0, 140); }
+                    temp.date = eve.Date.Date.ToString("dd/MM/yyyy");
+                    temp.type = eve.type;
+                    if (temp.type == "MUGD")
+                    {
+                        temp.back = "#FF00BFF3";
+                    }
+                    else
+                    {
+                        temp.back = "#FFFFD700";
+                    }
+                    temp.issuedBy = eve.issuedBy;
+        
+                    temp.Title = eve.Title;
+                    temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.ImageUri));
 
+
+
+
+
+                }
+                event1.DataContext = item;
             }
-            event1.DataContext = item;
-        }
-            catch(Exception)
+            catch (Exception)
             {
                 f = 1;
             }
-            if (f == 1)
+            finally
             {
-                MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                m.ShowAsync();
+                if (f == 1)
+                {
+                    MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
+                    await m.ShowAsync();
 
-            }
-            else
-            {
-                item.Add(temp);
+                }
+                else
+                {
+                    item.Add(temp);
+                }
             }
         }
         
@@ -108,20 +111,12 @@ namespace MUGDApp
            
         }
 
-        private void eventGrid_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-           
-        }
+     
 
         private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             EventList a = event1.SelectedItem as EventList;
-            //Frame.Navigate(typeof(eventDetailxaml), a);
-        }
-
-        private void Menu_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
+            
         }
 
         private void Menu_ItemClick_1(object sender, ItemClickEventArgs e)

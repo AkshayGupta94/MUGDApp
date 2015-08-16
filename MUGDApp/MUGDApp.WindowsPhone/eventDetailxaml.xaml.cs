@@ -31,37 +31,40 @@ namespace MUGDApp
         }
         int f = 0;
         EventDetail a = new EventDetail();
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            try 
-            { 
+            try
+            {
 
-            info1 = e.Parameter as Events;  
-            a.Desc = info1.Desc;
-            a.Title = info1.Title;
-            a.college = info1.college;
-            a.date =  info1.Date.Date.ToString("dd/MM/yyyy");
-            a.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(info1.ImageUri));
-            image2.Source = a.bitmapImage;
-            a.issuedBy = info1.issuedBy;
-            a.url = info1.url;
-            a.mobile = info1.mobile;
-            a.Email = info1.email;
+                info1 = e.Parameter as Events;
+                a.Desc = info1.Desc;
+                a.Title = info1.Title;
+                a.college = info1.college;
+                a.date = info1.Date.Date.ToString("dd/MM/yyyy");
+                a.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(info1.ImageUri));
+                image2.Source = a.bitmapImage;
+                a.issuedBy = info1.issuedBy;
+                a.url = info1.url;
+                a.mobile = info1.mobile;
+                a.Email = info1.email;
 
-             }
-            catch(Exception e1)
+            }
+            catch (Exception e1)
             {
                 f = 1;
             }
-            if(f==1)
+            finally
             {
-                MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-              m.ShowAsync();
+                if (f == 1)
+                {
+                    MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
+                    await m.ShowAsync();
 
-            }
-            else
-            {
-                Pivott.DataContext = a;
+                }
+                else
+                {
+                    Pivott.DataContext = a;
+                }
             }
         }
     }

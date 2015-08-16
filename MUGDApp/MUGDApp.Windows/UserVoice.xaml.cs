@@ -39,37 +39,34 @@ namespace MUGDApp
             StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
             StorageFile sampleFile =
                 await folder.CreateFileAsync("Sample.txt", CreationCollisionOption.OpenIfExists);
-            //await Windows.Storage.FileIO.WriteTextAsync(sampleFile, );
+            
             try
             {
                 string testlol = await Windows.Storage.FileIO.ReadTextAsync(sampleFile);
                 ids = JsonConvert.DeserializeObject<List<string>>(testlol);
             }
-            finally
+            catch(Exception ex)
             {
 
                 f = 1;
 
                
-                //List<idea> ai = new List<idea>();
-                //idea i = new idea();
-                //i.Title = "Test";
-                //i.option1 = "Hello1";
-                //i.option2 = "Hello2";
-                //i.option3 = "Hello3";
-                //ai.Add(i);
+   
                
             }
-            if (f == 1)
+            finally
             {
-                MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                m.ShowAsync();
+                if (f == 1)
+                {
+                    MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
+                    await m.ShowAsync();
 
-            }
-            else
-            {
-                items = await Table.ToCollectionAsync();
-                Voice.ItemsSource = items;
+                }
+                else
+                {
+                    items = await Table.ToCollectionAsync();
+                    Voice.ItemsSource = items;
+                }
             }
         }
         private async void Option1_Click(object sender, RoutedEventArgs e)

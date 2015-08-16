@@ -34,27 +34,8 @@ namespace MUGDApp
         {
             this.InitializeComponent();
             Loaded += MainPage_Loaded;
-            
-            //Mugd_appPush.channel.PushNotificationReceived += channel_PushNotificationReceived;
-
-          
-
-            //k = new Events();
-            //k.college = "Bvcoe";
-            //k.Desc = "lol";
-            //k.Title = "test";
-            //test.Insert(0, k);
-            //lol.ItemsSource = test;
-            //for(int i=0;i<10;i++)
-            //{
-
-            //    k = new Events();
-            //    k.college = "Bvcoe";
-            //    k.Desc = "lol";
-            //    k.Title = "test" + i.ToString();
-            //    test.Insert(0, k);
-            //}
            
+
 
         }
 
@@ -68,19 +49,19 @@ namespace MUGDApp
         async void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
 
-            PushNotificationChannel channel;
-            channel = await Windows.Networking.PushNotifications.PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
-            try
-            {
-                await App.Mugd_appClient.GetPush().RegisterNativeAsync(channel.Uri);
-                //await App.Mugd_appClient.InvokeApiAsync("notifyAllUsers",
-                //    new JObject(new JProperty("toast", "Sample Toast")));
-            }
-            catch (Exception exception)
-            {
-                HandleRegisterException(exception);
-            }
-            channel.PushNotificationReceived += channel_PushNotificationReceived;
+            //PushNotificationChannel channel;
+            //channel = await Windows.Networking.PushNotifications.PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+            //try
+            //{
+            //    await App.Mugd_appClient.GetPush().RegisterNativeAsync(channel.Uri);
+            //    //await App.Mugd_appClient.InvokeApiAsync("notifyAllUsers",
+            //    //    new JObject(new JProperty("toast", "Sample Toast")));
+            //}
+            //catch (Exception exception)
+            //{
+            //    HandleRegisterException(exception);
+            //}
+            Start.channel.PushNotificationReceived += channel_PushNotificationReceived;
             test = new ObservableCollection<ChatPubList>();
 
             items = await Table.OrderByDescending(ChatPublic => ChatPublic.CreatedAt).ToCollectionAsync();
@@ -112,22 +93,36 @@ namespace MUGDApp
         {
             if (args.ToastNotification.Content.InnerText.Contains("Event"))
             {
-                //args.Cancel = true;
+               
 
             }
             else
             {
                 args.Cancel = true;
+                items = await Table.OrderByDescending(ChatPublic => ChatPublic.CreatedAt).Take(1).ToCollectionAsync();
                 await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
-                    ChatPublic c = new ChatPublic();
+
                     ChatPubList a = new ChatPubList();
-                    a.Message = args.ToastNotification.Content.InnerText;
-                    // c.Name = args.ToastNotification.Content.InnerText.Substring(index + 4, args.ToastNotification.Content.InnerText.Length - index + 5);
+
+                    a.Message = items[0].Message;
+                    a.Name = items[0].Name;
+                    var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
+                    var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter
+                    string networkAdapterId = adapter.NetworkAdapterId.ToString();
+                    if (a.Name == networkAdapterId)
+                    {
+                        a.col = "White";
+                    }
+                    else
+                    {
+                        a.col = "#FFFF003A";
+                    }
                     MainPage.test.Insert(0, a);
 
 
                 });
+
 
 
 
