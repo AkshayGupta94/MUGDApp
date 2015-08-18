@@ -65,7 +65,7 @@ namespace MUGDApp
             }
         }
 
-        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Eventspage));
         }

@@ -7,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
+using Windows.Phone.UI.Input;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -120,22 +121,6 @@ namespace MUGDApp
             }
         }
        
-
-        private void eventGrid_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
-        {
-           
-        }
-
-        private void eventGrid_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-           
-        }
-
-
-        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Start));
-        }
        
 
         private void Menu_ItemClick_1(object sender, ItemClickEventArgs e)
@@ -152,6 +137,17 @@ namespace MUGDApp
 
             Frame.Navigate(typeof(eventDetailxaml), lol);
         }
-        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Start));
+        }
+
+        private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        {
+
+            Frame.Navigate(typeof(Start));
+            e.Handled = true;
+        }
     }
 }

@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Popups;
+using Windows.Phone.UI.Input;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -67,9 +68,17 @@ namespace MUGDApp
                 }
             }
         }
-        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Eventspage));
+        }
+
+        private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        {
+
+            Frame.Navigate(typeof(Eventspage));
+            e.Handled = true;
         }
     }
 }

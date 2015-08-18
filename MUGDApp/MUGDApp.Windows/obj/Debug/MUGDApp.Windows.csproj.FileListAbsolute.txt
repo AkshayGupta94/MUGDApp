@@ -429,7 +429,6 @@ C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\eventD
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\eventDetail.xbf
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\UserVoice.xaml
 C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\UserVoice.xbf
-C:\Users\garv\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\MUGDApp.Windows.csprojResolveAssemblyReference.cache
 C:\Users\garv\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\App.g.i.cs
 C:\Users\garv\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\App.g.cs
 C:\Users\garv\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Debug\eventDetail.g.i.cs

@@ -86,7 +86,11 @@
                 </DataTemplate>
             </HubSection>
         </Hub>
-        <Image x:ConnectionId='1' HorizontalAlignment="Left"                       Source="\Pics\Button_Back.png" Height="100" Grid.RowSpan="2" VerticalAlignment="Top" Width="100"/>
+        <Button x:ConnectionId='1'                      HorizontalAlignment="Left" Height="70" Width="70" Grid.Row="0" >
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Pics/Button_Back.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Page>

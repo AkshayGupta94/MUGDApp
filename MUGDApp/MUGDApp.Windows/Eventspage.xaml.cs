@@ -106,17 +106,11 @@ namespace MUGDApp
         }
         
 
-        private void eventGrid_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
-        {
-           
-        }
-
-        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+              private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Start));
         }
-     
-
+   
         private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             EventList a = event1.SelectedItem as EventList;

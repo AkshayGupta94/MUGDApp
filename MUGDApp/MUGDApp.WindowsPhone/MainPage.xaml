@@ -24,7 +24,11 @@
             <ColumnDefinition Width="3*"/>
 
         </Grid.ColumnDefinitions>
-        <Image HorizontalAlignment="Left" Tapped="Image_Tapped" Source="\Pics\Button_Back.png" Height="100" VerticalAlignment="Top" Width="100"/>
+        <Button Click="Button_Click" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Height="50" Width="50" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Pics/Button_Back.png"/>
+            </Button.Background>
+        </Button>
         <TextBox x:Name="message" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="7,12.833,0,0" Height="39" Background="#FFE4E4E4" Foreground="Black"/>
         <Button Grid.Row="1" HorizontalAlignment="Center" BorderThickness="2"  VerticalAlignment="Center" Content="Send"
                 x:Name="Send"

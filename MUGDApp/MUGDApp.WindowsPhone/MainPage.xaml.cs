@@ -65,6 +65,10 @@ namespace MUGDApp
             lol.ItemsSource = test;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Start));
+        }
         async void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             Start.channel.PushNotificationReceived += channel_PushNotificationReceived;

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -29,7 +30,8 @@ namespace MUGDApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageDialog m = new MessageDialog("Ahhh... The Page is Under Construction");
+            m.ShowAsync();
         }
 
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)

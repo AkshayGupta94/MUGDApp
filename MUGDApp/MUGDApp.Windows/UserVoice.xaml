@@ -41,11 +41,23 @@
             <RowDefinition Height="0.9*"/>
 
         </Grid.RowDefinitions>
-        <TextBox Text="     User Voice" Grid.Row="0" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="30"  TextAlignment="Left" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FFFF8E01" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Click="Button_Click" HorizontalAlignment="Left" Height="70" Width="70" Grid.Row="0" >
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Pics/Button_Back.png"/>
+            </Button.Background>
+        </Button>
+
+        <TextBox Text="     User Voice" Grid.Row="0" Grid.Column="1" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="30"  TextAlignment="Left" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FFFF8E01" />
 
 
         <GridView
                         Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
                         HorizontalAlignment="Stretch"
                         x:Name="Voice"
                        VerticalAlignment="Stretch"

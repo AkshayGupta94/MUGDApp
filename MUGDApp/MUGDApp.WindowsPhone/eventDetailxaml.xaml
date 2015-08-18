@@ -13,20 +13,26 @@
             <RowDefinition Height="0.1*"/>
             <RowDefinition Height="0.35*"/>
             <RowDefinition Height="0.55*"/>
-            
-
         </Grid.RowDefinitions>
-        <Image HorizontalAlignment="Left" Tapped="Image_Tapped" Source="\Pics\Button_Back.png" Height="100" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image2" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.9*"/>
+        </Grid.ColumnDefinitions>
+        <Button Click="Button_Click" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Height="50" Width="50" Grid.ColumnSpan="2" Margin="-34,3,0,3.167">
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Pics/Button_Back.png"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="image2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="2" />
 
-        <Pivot x:Name="Pivott"  Grid.Row="2" Margin="0,28.167,0,0">
+        <Pivot x:Name="Pivott" Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="2">
 
             <Pivot.HeaderTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding}"  RequestedTheme="Light" FontSize="20" />
+                    <TextBlock Text="{Binding}" Margin="0,5,0,0"  RequestedTheme="Light" FontSize="20" />
                 </DataTemplate>
             </Pivot.HeaderTemplate>
-            <PivotItem ScrollViewer.HorizontalScrollBarVisibility="Auto"  Header="ABOUT" >
+            <PivotItem ScrollViewer.HorizontalScrollBarVisibility="Auto" Header="ABOUT" >
 
                 <Grid>
                     <Grid.RowDefinitions>
@@ -54,8 +60,10 @@
                 <Grid>
                     <TextBlock TextWrapping="Wrap" DataContext="{Binding}" Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
---><!--TODO: Add map control in future updates-->
-                    <!--<Maps:MapControl Height="231" Width="324" HorizontalAlignment="Center" VerticalAlignment="Stretch" />--><!--
+-->
+            <!--TODO: Add map control in future updates-->
+            <!--<Maps:MapControl Height="231" Width="324" HorizontalAlignment="Center" VerticalAlignment="Stretch" />-->
+            <!--
 
 
                 </Grid>
@@ -83,7 +91,7 @@
                     <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding url}" />
 
                 </Grid>
-                
+
             </PivotItem>
         </Pivot>
 
