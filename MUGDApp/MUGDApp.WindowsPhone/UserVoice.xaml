@@ -51,7 +51,7 @@
                 <ImageBrush Stretch="Uniform" ImageSource="Pics/Button_Back.png"/>
             </Button.Background>
         </Button>
-        <TextBox Text="     User Voice" Grid.Column="1"  Grid.Row="0" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="30"  TextAlignment="Left" HorizontalAlignment="Stretch"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FFFF8E01" />
+        <TextBox Text="     User Voice" Grid.Column="1"  Grid.Row="0" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="30"  TextAlignment="Left" HorizontalAlignment="Stretch"   IsDoubleTapEnabled="False" IsTapEnabled="False" IsReadOnly="True" IsHitTestVisible="False" Background="#FFFF8E01" />
 
 
         <GridView

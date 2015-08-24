@@ -28,10 +28,10 @@ namespace MUGDApp
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             MessageDialog m = new MessageDialog("Ahhh... The Page is Under Construction");
-            m.ShowAsync();
+            await m.ShowAsync();
         }
 
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)

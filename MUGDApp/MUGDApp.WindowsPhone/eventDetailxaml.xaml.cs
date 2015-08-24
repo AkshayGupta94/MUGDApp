@@ -42,7 +42,7 @@ namespace MUGDApp
                 a.Title = info1.Title;
                 a.college = info1.college;
                 a.date = info1.Date.Date.ToString("dd/MM/yyyy");
-                a.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(info1.ImageUri));
+                a.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(info1.imageUri));
                 image2.Source = a.bitmapImage;
                 a.issuedBy = info1.issuedBy;
                 a.url = info1.url;
@@ -59,7 +59,7 @@ namespace MUGDApp
                 if (f == 1)
                 {
                     MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                    m.ShowAsync();
+                    await m.ShowAsync();
 
                 }
                 else

@@ -14,16 +14,16 @@
 
 
         </Grid.RowDefinitions>
-        <Image x:Name="image2" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Image x:Name="image2" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
-        <Hub x:Name="Pivott"  Grid.Row="1">
+        <Hub x:Name="Pivott"  Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="2">
 
-            <Hub.HeaderTemplate>
+            <!--<Hub.HeaderTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}"  RequestedTheme="Light" FontSize="30" />
                 </DataTemplate>
-            </Hub.HeaderTemplate>
-            <HubSection ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="22" Header="ABOUT" >
+            </Hub.HeaderTemplate>-->
+            <HubSection ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" FontSize="20" Header="ABOUT" Foreground="Black" Width="846" >
                 <DataTemplate>
                 <Grid>
                     <Grid.RowDefinitions>

@@ -23,7 +23,7 @@ namespace MUGDApp
         public string SasQueryString { get; set; }
 
         [JsonProperty(PropertyName = "imageUri")]
-        public string ImageUri { get; set; }
+        public string imageUri { get; set; }
 
         public string type { get; set; }
         public string time { get; set; }

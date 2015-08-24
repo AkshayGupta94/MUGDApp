@@ -27,7 +27,7 @@ namespace MUGDApp
     {
         public static PushNotificationChannel channel;
         private IMobileServiceTable<ChatPublic> Table = App.MobileService.GetTable<ChatPublic>();
-        private MobileServiceCollection<ChatPublic, ChatPublic> items;
+       // private MobileServiceCollection<ChatPublic, ChatPublic> items;
         public Start()
         {
             this.InitializeComponent();

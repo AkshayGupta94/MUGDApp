@@ -41,16 +41,16 @@ namespace MUGDApp
         /// This parameter is typically used to configure the page.</param>
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            int f = 1;
+            int f = 0;
             List<EventList> item = new List<EventList>();
             EventList temp = new EventList();
             try
             {
                 items = await Table.Where(Events
-                    => Events.ImageUri != null).ToCollectionAsync();
+                    => Events.imageUri != null).ToCollectionAsync();
                 foreach (Events eve in items)
                 {
-
+                    temp = new EventList();
                     if (eve.college.Length <= 14)
                     {
                         temp.college = eve.college;
@@ -75,16 +75,16 @@ namespace MUGDApp
                         temp.back = "#FFFFD700";
                     }
                     temp.issuedBy = eve.issuedBy;
-        
+                    temp.Id = eve.Id;
                     temp.Title = eve.Title;
-                    temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.ImageUri));
-
+                    temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.imageUri));
+                    item.Add(temp);
 
 
 
 
                 }
-                event1.DataContext = item;
+                
             }
             catch (Exception)
             {
@@ -95,12 +95,13 @@ namespace MUGDApp
                 if (f == 1)
                 {
                     MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                    m.ShowAsync();
+                    await m.ShowAsync();
 
                 }
                 else
                 {
-                    item.Add(temp);
+                    event1.DataContext = item;
+                    
                 }
             }
         }
@@ -111,14 +112,22 @@ namespace MUGDApp
             Frame.Navigate(typeof(Start));
         }
    
-        private void listEvent_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            EventList a = event1.SelectedItem as EventList;
-            
-        }
+      
 
         private void Menu_ItemClick_1(object sender, ItemClickEventArgs e)
         {
+            Events ev = new Events();
+            EventList a = e.ClickedItem as EventList;
+            foreach(Events eve in items)
+            {
+                if(a.Id==eve.Id)
+                {
+                    ev = eve;
+                    break;
+                }
+
+            }
+            Frame.Navigate(typeof(eventDetail), ev);
 
         }
         

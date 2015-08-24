@@ -66,7 +66,7 @@ namespace MUGDApp
                 if (f == 1)
                 {
                     MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                    m.ShowAsync();
+                    await m.ShowAsync();
 
                 }
                 else

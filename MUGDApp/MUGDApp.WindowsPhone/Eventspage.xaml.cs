@@ -53,7 +53,7 @@ namespace MUGDApp
             try
             {
                 items = await Table.Where(Events
-                    => Events.ImageUri != null).ToCollectionAsync();
+                    => Events.imageUri != null).ToCollectionAsync();
 
                 foreach (Events eve in items)
                 {
@@ -85,7 +85,7 @@ namespace MUGDApp
                     temp.issuedBy = eve.issuedBy;
                     //temp.date = eve.date;
                     temp.Title = eve.Title;
-                    temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.ImageUri));
+                    temp.bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(eve.imageUri));
                     var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
 
                     temp.width = Window.Current.Bounds.Width * scaleFactor * 0.72;
@@ -112,7 +112,7 @@ namespace MUGDApp
                 if (f == 1)
                 {
                     MessageDialog m = new MessageDialog("Oops... There was some Problem Handling your Request");
-                    m.ShowAsync();
+                    await m.ShowAsync();
                 }
                 else
                 {
