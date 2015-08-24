@@ -3,5 +3,7 @@
   <PropertyGroup>
     <AppxShowAllApps>False</AppxShowAllApps>
     <ProjectView>ShowAllFiles</ProjectView>
+    <AppxPackageIsForStore>False</AppxPackageIsForStore>
+    <AppxBuildConfigurationSelection>neutral</AppxBuildConfigurationSelection>
   </PropertyGroup>
 </Project>

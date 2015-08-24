@@ -23,7 +23,7 @@
                     <TextBlock Text="{Binding}"  RequestedTheme="Light" FontSize="30" />
                 </DataTemplate>
             </Hub.HeaderTemplate>-->
-            <HubSection ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" FontSize="20" Header="ABOUT" Foreground="Black" Width="846" >
+            <HubSection RequestedTheme="Light" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" FontSize="20" Header="ABOUT" Foreground="Black" Width="846" >
                 <DataTemplate>
                 <Grid>
                     <Grid.RowDefinitions>

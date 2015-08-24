@@ -82,6 +82,7 @@
       <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HubSection">
+      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Header" />
       <RootProperty Name="Foreground" />

@@ -24,6 +24,9 @@
     <Application Id="App" Executable="MUGDApp.Windows.exe" EntryPoint="MUGDApp.Windows.App">
       <m2:VisualElements DisplayName="Mugd APP" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="MUGDApp.Windows" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
       </m2:VisualElements>
     </Application>
   </Applications>
