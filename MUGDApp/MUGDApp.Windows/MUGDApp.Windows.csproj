@@ -134,8 +134,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\150x150.png" />
+    <Content Include="Assets\30.png" />
+    <Content Include="Assets\50.png" />
+    <Content Include="Assets\744.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\splash.jpg" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <None Include="Package.StoreAssociation.xml" />
