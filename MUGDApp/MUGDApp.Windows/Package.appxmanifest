@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="49444AxeJulius.MugdAPP" Publisher="CN=EE61FA12-8AB0-48AE-AB5C-1AEEF089B9B9" Version="1.1.0.0" />
+  <Identity Name="49444AxeJulius.MugdAPP" Publisher="CN=EE61FA12-8AB0-48AE-AB5C-1AEEF089B9B9" Version="1.1.0.7" />
   <Properties>
     <DisplayName>Mugd APP</DisplayName>
     <PublisherDisplayName>Axe Julius</PublisherDisplayName>

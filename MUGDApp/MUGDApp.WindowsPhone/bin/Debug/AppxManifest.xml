@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="49444AxeJulius.MugdAPP" Publisher="CN=EE61FA12-8AB0-48AE-AB5C-1AEEF089B9B9" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="49444AxeJulius.MugdAPP" Publisher="CN=EE61FA12-8AB0-48AE-AB5C-1AEEF089B9B9" Version="1.0.0.1" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="2fb0e1c2-8396-486b-b0c1-7de128b7c494" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Mugd APP</DisplayName>

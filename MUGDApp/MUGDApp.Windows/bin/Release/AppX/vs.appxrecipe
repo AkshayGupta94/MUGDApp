@@ -10,25 +10,25 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>49444AxeJulius.MugdAPP</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\obj\Release\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>451E537F58AAF18A1E7D1ED6AFE817694AF42ED680757582B366A2654EC0B2A7</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>49444AxeJulius.MugdAPP_1.0.0.0_neutral__2nh7c0d2m2w4p</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>E4EAE918242ABC957FFC1B1B140FCBE6B4869AB47528AECC4C31ED2D26888380</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>49444AxeJulius.MugdAPP_1.1.0.7_neutral__2nh7c0d2m2w4p</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>49444AxeJulius.MugdAPP_2nh7c0d2m2w4p!App</RegisteredUserModeAppID>
     <RegisteredPackageID>49444AxeJulius.MugdAPP</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=EE61FA12-8AB0-48AE-AB5C-1AEEF089B9B9</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.1.0.7</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-24T18:07:13.128</Modified>
+      <Modified>2015-08-25T18:22:38.959</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Release\MUGDApp.Windows.exe">
       <PackagePath>MUGDApp.Windows.exe</PackagePath>
-      <Modified>2015-08-24T18:07:12.146</Modified>
+      <Modified>2015-08-25T18:22:38.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
@@ -54,25 +54,37 @@
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
       <Modified>2015-08-18T06:45:34.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\150x150.png">
+      <PackagePath>Assets\150x150.png</PackagePath>
+      <Modified>2015-08-24T18:57:26.178</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\30.png">
+      <PackagePath>Assets\30.png</PackagePath>
+      <Modified>2015-08-24T18:57:26.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\50.png">
+      <PackagePath>Assets\50.png</PackagePath>
+      <Modified>2015-08-24T18:57:26.174</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-18T06:45:34.000</Modified>
+      <Modified>2015-07-27T17:27:37.872</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-18T06:45:34.000</Modified>
+      <Modified>2015-07-27T17:27:37.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-18T06:45:34.000</Modified>
+      <Modified>2015-08-24T19:01:24.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-18T06:45:34.000</Modified>
+      <Modified>2015-07-27T17:27:37.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Button_Back.png">
       <PackagePath>Pics\Button_Back.png</PackagePath>
@@ -98,6 +110,14 @@
       <PackagePath>Pics\login.png</PackagePath>
       <Modified>2015-08-18T06:45:34.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\744.jpg">
+      <PackagePath>Assets\744.jpg</PackagePath>
+      <Modified>2015-08-24T18:57:26.181</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\Assets\splash.jpg">
+      <PackagePath>Assets\splash.jpg</PackagePath>
+      <Modified>2015-08-24T18:57:26.194</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\AgNJA8Cx26Wpjixy8zD1gBsYNVNuQd8repz6dDT3hNY-.jpg">
       <PackagePath>Pics\AgNJA8Cx26Wpjixy8zD1gBsYNVNuQd8repz6dDT3hNY-.jpg</PackagePath>
       <Modified>2015-08-18T06:45:34.000</Modified>
@@ -112,7 +132,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Release\MUGDApp.Windows.xr.xml">
       <PackagePath>MUGDApp.Windows.xr.xml</PackagePath>
-      <Modified>2015-08-24T18:06:44.304</Modified>
+      <Modified>2015-08-25T17:50:19.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Release\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -124,7 +144,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Release\eventDetail.xbf">
       <PackagePath>eventDetail.xbf</PackagePath>
-      <Modified>2015-08-24T18:07:12.029</Modified>
+      <Modified>2015-08-25T17:50:19.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Release\Eventspage.xbf">
       <PackagePath>Eventspage.xbf</PackagePath>
@@ -260,7 +280,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-08-24T18:07:12.748</Modified>
+      <Modified>2015-08-25T18:22:38.652</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

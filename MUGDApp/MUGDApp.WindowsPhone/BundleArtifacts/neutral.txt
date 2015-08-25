@@ -1,0 +1,3 @@
+MainPackage=C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MUGDApp.WindowsPhone_1.0.0.7_AnyCPU.appx
+SymbolPackage=C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\AppPackages\MUGDApp.WindowsPhone_1.0.0.7_Test\MUGDApp.WindowsPhone_1.0.0.7_AnyCPU.appxsym
+ResourcePack=C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MUGDApp.WindowsPhone_1.0.0.7_scale-100.appx

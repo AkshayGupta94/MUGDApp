@@ -93,7 +93,7 @@ namespace MUGDApp
             Menu.DataContext = myList;
         }
       
-        private void Menu_ItemClick(object sender, ItemClickEventArgs e)
+        private async void Menu_ItemClick(object sender, ItemClickEventArgs e)
         {
             datamodel lolol = e.ClickedItem as datamodel;
             if (lolol.name == "Events")
@@ -110,7 +110,9 @@ namespace MUGDApp
             }
             else if (lolol.title == "Member Login")
             {
-                Frame.Navigate(typeof(loginMember));
+                //Frame.Navigate(typeof(loginMember));
+                Windows.UI.Popups.MessageDialog m = new Windows.UI.Popups.MessageDialog("Will be added in update");
+                await m.ShowAsync();
             }
 
         }

@@ -39,29 +39,53 @@
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Logo.scale-240.png">
-      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\106.png">
+      <PackagePath>Assets\106.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\120.png">
+      <PackagePath>Assets\120.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\150x150.png">
+      <PackagePath>Assets\150x150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\SmallLogo.scale-240.png">
-      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\30.png">
+      <PackagePath>Assets\30.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\44.png">
+      <PackagePath>Assets\44.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\SplashScreen.scale-240.png">
-      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\50.png">
+      <PackagePath>Assets\50.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
-      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\71.png">
+      <PackagePath>Assets\71.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\StoreLogo.scale-240.png">
-      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Wide310x150Logo.png">
+      <PackagePath>Assets\Wide310x150Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Button_Back.png">
       <PackagePath>Pics\Button_Back.png</PackagePath>
@@ -80,6 +104,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\login.png">
       <PackagePath>Pics\login.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\744.jpg">
+      <PackagePath>Assets\744.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\event.jpg">
       <PackagePath>Assets\event.jpg</PackagePath>

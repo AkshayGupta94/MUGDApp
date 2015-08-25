@@ -579,3 +579,4 @@ namespace MUGDApp.MUGDApp_WindowsPhone_XamlTypeInfo
 }
 
 
+

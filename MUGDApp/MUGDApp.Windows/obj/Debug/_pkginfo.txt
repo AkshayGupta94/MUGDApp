@@ -1,1 +1,1 @@
-C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\AppPackages\MUGDApp.Windows_1.0.0.0_AnyCPU_Debug_Test\MUGDApp.Windows_1.0.0.0_AnyCPU_Debug.appx
+C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Windows\AppPackages\MUGDApp.Windows_1.1.0.1_AnyCPU_Debug_Test\MUGDApp.Windows_1.1.0.1_AnyCPU_Debug.appx
