@@ -15,6 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Auth.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ChatPublic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ChatPubList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)datamodel.cs" />

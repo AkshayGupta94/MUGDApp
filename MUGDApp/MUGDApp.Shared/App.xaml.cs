@@ -33,20 +33,20 @@ namespace MUGDApp
 #if WINDOWS_PHONE_APP
 // http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409
 public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient Mugd_appClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
-"https://mugd-app.azure-mobile.net/",
-"EEkrmAJgegNSaCsgIaRQDTAmbAqZRZ90");
+Auth.web,
+Auth.key);
 #endif
         public static MobileServiceClient MobileService = new MobileServiceClient(
-    "https://mugd-app.azure-mobile.net/",
-    "EEkrmAJgegNSaCsgIaRQDTAmbAqZRZ90"
+    Auth.web,
+    Auth.key
 );
 
 
 #if WINDOWS_APP
         // http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409
         public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient Mugd_appClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
-        "https://mugd-app.azure-mobile.net/",
-        "EEkrmAJgegNSaCsgIaRQDTAmbAqZRZ90");
+        Auth.web,
+        Auth.key);
 #endif
         //public static PushNotificationChannel CurrentChannel { get; private set; }
 #if WINDOWS_PHONE_APP

@@ -117,7 +117,7 @@ namespace MUGDApp
                 {
 
                     ChatPubList a = new ChatPubList();
-                    a.date = items[0].CreatedAt.TimeOfDay.ToString();
+                    a.date = items[0].CreatedAt.Date.ToString();
                     a.Message = items[0].Message;
                     a.time = items[0].CreatedAt.TimeOfDay.ToString();
                     a.Name = items[0].Name;
