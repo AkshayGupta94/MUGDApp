@@ -1,159 +1,159 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-6OP0GOB</Machine>
-    <WindowsUser>aksha</WindowsUser>
+    <Machine>DESKTOP-DNJFATK</Machine>
+    <WindowsUser>Garv Jasuja</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>2fb0e1c2-8396-486b-b0c1-7de128b7c494</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\obj\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MUGDApp.WindowsPhone.exe">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MUGDApp.WindowsPhone.exe">
       <PackagePath>MUGDApp.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MUGDApp.WindowsPhone.exe.config">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MUGDApp.WindowsPhone.exe.config">
       <PackagePath>MUGDApp.WindowsPhone.exe.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\wpa81\Microsoft.WindowsAzure.Mobile.dll">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\wpa81\Microsoft.WindowsAzure.Mobile.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\wpa81\Microsoft.WindowsAzure.Mobile.Ext.dll">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\packages\WindowsAzure.MobileServices.1.2.5\lib\wpa81\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\106.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\106.png">
       <PackagePath>Assets\106.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\120.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\120.png">
       <PackagePath>Assets\120.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\150x150.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\150x150.png">
       <PackagePath>Assets\150x150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\30.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\30.png">
       <PackagePath>Assets\30.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\44.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\44.png">
       <PackagePath>Assets\44.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\50.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\50.png">
       <PackagePath>Assets\50.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\71.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\71.png">
       <PackagePath>Assets\71.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Square71x71Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Square71x71Logo.scale-100.png">
       <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Wide310x150Logo.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\Wide310x150Logo.png">
       <PackagePath>Assets\Wide310x150Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Button_Back.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Button_Back.png">
       <PackagePath>Pics\Button_Back.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\idea.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\idea.png">
       <PackagePath>Pics\idea.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\chat.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\chat.png">
       <PackagePath>Pics\chat.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Event.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\Event.png">
       <PackagePath>Pics\Event.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\idea2.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\idea2.png">
       <PackagePath>Pics\idea2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\login.png">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\login.png">
       <PackagePath>Pics\login.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\744.jpg">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\744.jpg">
       <PackagePath>Assets\744.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\event.jpg">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\event.jpg">
       <PackagePath>Assets\event.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\geometricupcomingevents.jpg">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\geometricupcomingevents.jpg">
       <PackagePath>Assets\geometricupcomingevents.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg">
       <PackagePath>Assets\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\validate_yourself.jpg">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\Assets\validate_yourself.jpg">
       <PackagePath>Assets\validate_yourself.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\AgNJA8Cx26Wpjixy8zD1gBsYNVNuQd8repz6dDT3hNY-.jpg">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\AgNJA8Cx26Wpjixy8zD1gBsYNVNuQd8repz6dDT3hNY-.jpg">
       <PackagePath>Pics\AgNJA8Cx26Wpjixy8zD1gBsYNVNuQd8repz6dDT3hNY-.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\area51.jpg">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\area51.jpg">
       <PackagePath>Pics\area51.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.Shared\Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg">
       <PackagePath>Pics\ms_ninja_cat_riding_unicorn_space_blue_by_flothegangsta-d8pcuuy.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MUGDApp.WindowsPhone.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MUGDApp.WindowsPhone.xr.xml">
       <PackagePath>MUGDApp.WindowsPhone.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\loginMember.xbf">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\loginMember.xbf">
       <PackagePath>loginMember.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\eventDetailxaml.xbf">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\eventDetailxaml.xbf">
       <PackagePath>eventDetailxaml.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\Eventspage.xbf">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\Eventspage.xbf">
       <PackagePath>Eventspage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\Start.xbf">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\Start.xbf">
       <PackagePath>Start.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\UserVoice.xbf">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\UserVoice.xbf">
       <PackagePath>UserVoice.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aksha\Documents\GitHub\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Garv Jasuja\Source\Repos\MUGDApp\MUGDApp\MUGDApp.WindowsPhone\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

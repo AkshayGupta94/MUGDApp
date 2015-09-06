@@ -16,22 +16,24 @@
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition Width="4*"/>
-
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
 
         </Grid.ColumnDefinitions>
-        <Button Click="Button_Click" HorizontalAlignment="Left" Height="70" Width="70" Grid.Row="0" >
+        <TextBox Text="     Chats" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Foreground="White" Visibility="Visible" VerticalAlignment="Stretch" FontSize="30"  TextAlignment="Left" HorizontalAlignment="Stretch" IsHitTestVisible="False"  IsDoubleTapEnabled="True" IsReadOnly="True" Background="#FFD71A20" />
+
+        <Button Click="Button_Click" HorizontalAlignment="Left" BorderBrush="Transparent" Height="70" Width="70" Grid.Row="0" >
             <Button.Background>
                 <ImageBrush Stretch="Uniform" ImageSource="Pics/Button_Back.png"/>
             </Button.Background>
         </Button>
-        <TextBox x:Name="message" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="#FFE4E4E4" Margin="5,9.833,5,0" Height="39" Foreground="White"/>
+        <TextBox x:Name="message" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="#FFE4E4E4" Margin="5,9.833,0,0" Height="49" FontSize="25" Foreground="Black"/>
         <Button Grid.Row="1" HorizontalAlignment="Center" BorderThickness="2"  VerticalAlignment="Center" Content="Send"
                 x:Name="Send"
-                Click="Send_Click" HorizontalContentAlignment="Center"  Height="58" Grid.Column="2" Width="111" Background="#FF1F277A" Foreground="White"/>
-        <ListView x:Name="lol" Grid.Row="2" Grid.ColumnSpan="3" Foreground="White"
+                Click="Send_Click" HorizontalContentAlignment="Center"  Height="58" Grid.Column="2" Width="111" Background="#FF1F277A" Foreground="White" />
+        <ListView x:Name="lol" Grid.Row="2" Grid.ColumnSpan="4" Foreground="White"
                    >
                  <ListView.ItemTemplate>
 

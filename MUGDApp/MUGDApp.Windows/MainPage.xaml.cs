@@ -75,8 +75,8 @@ namespace MUGDApp
             foreach (ChatPublic k in items)
             {
                 ChatPubList a = new ChatPubList();
-                a.date = k.CreatedAt.Date.ToString();
-                a.time = k.CreatedAt.TimeOfDay.ToString();
+                a.date = k.__CreatedAt.Date.ToString();
+                a.time = k.__CreatedAt.TimeOfDay.ToString();
                 a.time = a.time.Remove(5);
                 a.date = a.date.Remove(10);
                 a.Name = k.Name;
@@ -106,13 +106,13 @@ namespace MUGDApp
             else
             {
                 args.Cancel = true;
-                items = await Table.OrderByDescending(ChatPublic => ChatPublic.CreatedAt).Take(1).ToCollectionAsync();
+                items = await Table.OrderByDescending(ChatPublic => ChatPublic.__CreatedAt).Take(1).ToCollectionAsync();
                 await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
 
                     ChatPubList a = new ChatPubList();
-                    a.date = items[0].CreatedAt.Date.ToString();
-                    a.time = items[0].CreatedAt.TimeOfDay.ToString();
+                    a.date = items[0].__CreatedAt.Date.ToString();
+                    a.time = items[0].__CreatedAt.TimeOfDay.ToString();
                     a.time = a.time.Remove(5);
                     a.date = a.date.Remove(10);
                     a.Message = items[0].Message;

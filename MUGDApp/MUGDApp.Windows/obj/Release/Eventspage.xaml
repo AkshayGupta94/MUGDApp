@@ -25,7 +25,7 @@
                     </Grid.ColumnDefinitions>
                     <Image x:Name="eventImg" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch"  Source="{Binding bitmapImage}" Stretch="Uniform"/>
                     <TextBlock x:Name="title" TextAlignment="Center" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Grid.ColumnSpan="3" FontSize="20" Text="{Binding Title}" Foreground="Black"/>
-                    <TextBox IsReadOnly="True" Background="{Binding back}"  x:Name="spons"  Foreground="White" TextAlignment="Center"  Grid.Row="2" Grid.Column="1" FontSize="17" HorizontalAlignment="Center" Text="{Binding type}" SelectionHighlightColor="{x:Null}" />
+                    <TextBox IsReadOnly="True" Background="{Binding back}"  x:Name="spons"  Foreground="White" TextAlignment="Center"  Grid.Row="2" Grid.Column="1" FontSize="15" HorizontalAlignment="Center" Text="{Binding type}" SelectionHighlightColor="{x:Null}" />
                     <TextBlock x:Name="date" TextAlignment="Center" Grid.Row="3" Foreground="Black" Grid.Column="0" HorizontalAlignment="Left" FontSize="16"  Text="{Binding date}"/>
 
                 </Grid>

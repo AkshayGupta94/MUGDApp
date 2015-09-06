@@ -18,34 +18,42 @@
 
         <Hub x:Name="Pivott"  Grid.Column="0" Grid.ColumnSpan="2"  Grid.Row="2">
 
+            
             <!--<Hub.HeaderTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}"  RequestedTheme="Light" FontSize="30" />
                 </DataTemplate>
             </Hub.HeaderTemplate>-->
             <HubSection RequestedTheme="Light" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" FontSize="20" Header="ABOUT" Foreground="Black" Width="846" >
+              
                 <DataTemplate>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="0.15*"/>
-                        <RowDefinition Height="0.15*"/>
-                        <RowDefinition Height="0.15*"/>
-                        <RowDefinition Height="0.15*"/>
-                        <RowDefinition Height="0.15*"/>
-                        <RowDefinition Height="0.15*"/>
-                        <RowDefinition Height="0.15*"/>
-                        <RowDefinition Height="0.7*"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="0" FontWeight="Bold" Text="Title"/>
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="1" Text="{Binding Title}" />
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="2" Text="Venue"/>
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="3" Text="{Binding college}" />
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="4" Text="Date"/>
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="5" Text="{Binding date}" />
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="6" Text="Descritpion" />
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding Desc}" />
-
-                </Grid>
+                   
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.15*"/>
+                                <RowDefinition Height="0.15*"/>
+                                <RowDefinition Height="0.15*"/>
+                                <RowDefinition Height="0.15*"/>
+                                <RowDefinition Height="0.15*"/>
+                                <RowDefinition Height="0.15*"/>
+                                <RowDefinition Height="0.15*"/>
+                                <RowDefinition Height="0.7*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="0" FontWeight="Bold" Text="Title"/>
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="1" Text="{Binding Title}" />
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="2" Text="Venue"/>
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="3" Text="{Binding college}" />
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="4" Text="Date"/>
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="5" Text="{Binding date}" />
+                            <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="6" Text="Descritpion" />
+                        <ScrollViewer VerticalAlignment="Top" Grid.Row="7"
+                                       VerticalScrollBarVisibility="Visible" VerticalScrollMode="Enabled"
+                                       AllowDrop="False" BringIntoViewOnFocusChange="True"
+                                       HorizontalScrollMode="Disabled" IsHoldingEnabled="True" >
+                            <TextBlock TextWrapping="WrapWholeWords" Foreground="Black" Grid.Row="7" x:Name="Descr" Text="{Binding Desc}" ScrollViewer.VerticalScrollMode="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                        </ScrollViewer>
+                    </Grid>
+                   
                 </DataTemplate>
             </HubSection>
             <!--<PivotItem Header="VENUE" FontSize="12" >                
@@ -80,7 +88,7 @@
                     <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="4" Text="Email"/>
                     <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="5" Text="{Binding Email}" />
                     <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="6" Text="Url" />
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding Desc}" />
+                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding url}" />
 
                 </Grid>
                 </DataTemplate>

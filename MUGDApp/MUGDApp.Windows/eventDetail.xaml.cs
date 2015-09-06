@@ -32,6 +32,7 @@ namespace MUGDApp
         {
             int f = 0;
             EventDetail a = new EventDetail();
+            ScrollBar s = new ScrollBar();
             try
             {
                 info1 = e.Parameter as Events;
@@ -60,6 +61,7 @@ namespace MUGDApp
                 }
                 else
                 {
+                    
                     Pivott.DataContext = a;
                 }
             }

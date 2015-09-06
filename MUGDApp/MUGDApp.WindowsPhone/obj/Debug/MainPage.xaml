@@ -19,12 +19,12 @@
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="4*"/>
             <ColumnDefinition Width="3*"/>
 
         </Grid.ColumnDefinitions>
-        <Button x:ConnectionId='1'                      HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Height="50" Width="50" BorderBrush="{x:Null}">
+        <Button x:ConnectionId='1'                      HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" BorderBrush="{x:Null}" Margin="-30,4,0,3.167" >
             <Button.Background>
                 <ImageBrush Stretch="Uniform" ImageSource="Pics/Button_Back.png"/>
             </Button.Background>

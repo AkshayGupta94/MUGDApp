@@ -74,7 +74,7 @@ namespace MUGDApp
             Start.channel.PushNotificationReceived += channel_PushNotificationReceived;
             test = new ObservableCollection<ChatPubList>();
 
-            items = await Table.OrderByDescending(ChatPublic => ChatPublic.CreatedAt).ToCollectionAsync();
+            items = await Table.OrderByDescending(ChatPublic => ChatPublic.__CreatedAt).ToCollectionAsync();
             var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
             var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter
             string networkAdapterId = adapter.NetworkAdapterId.ToString();
@@ -82,8 +82,8 @@ namespace MUGDApp
             foreach (ChatPublic k in items)
             {
                 ChatPubList a = new ChatPubList();
-                a.date = k.CreatedAt.Date.ToString();
-                a.time = k.CreatedAt.TimeOfDay.ToString();
+                a.date = k.__CreatedAt.Date.ToString();
+                a.time = k.__CreatedAt.TimeOfDay.ToString();
                 a.time=a.time.Remove(5);
                 a.date=a.date.Remove(10);
                 a.Name = k.Name;
@@ -112,14 +112,14 @@ namespace MUGDApp
             else
             {
                 args.Cancel = true;
-                items = await Table.OrderByDescending(ChatPublic => ChatPublic.CreatedAt).Take(1).ToCollectionAsync();
+                items = await Table.OrderByDescending(ChatPublic => ChatPublic.__CreatedAt).Take(1).ToCollectionAsync();
                 await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
 
                     ChatPubList a = new ChatPubList();
-                    a.date = items[0].CreatedAt.Date.ToString();
+                    a.date = items[0].__CreatedAt.Date.ToString();
                     a.Message = items[0].Message;
-                    a.time = items[0].CreatedAt.TimeOfDay.ToString();
+                    a.time = items[0].__CreatedAt.TimeOfDay.ToString();
                     a.Name = items[0].Name;
                     var networkProfiles = Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles();
                     var adapter = networkProfiles.First<Windows.Networking.Connectivity.ConnectionProfile>().NetworkAdapter;//takes the first network adapter

@@ -10,5 +10,6 @@ namespace MUGDApp
         public string Message { get; set; }
         public string Id { get; set; }
         public DateTime CreatedAt { get; set; }
+        public DateTime __CreatedAt { get; set; }
     }
 }
