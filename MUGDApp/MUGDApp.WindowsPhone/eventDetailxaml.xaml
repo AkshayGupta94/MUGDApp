@@ -52,8 +52,12 @@
                     <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="4" Text="Date"/>
                     <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="5" Text="{Binding date}" />
                     <TextBlock TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" Grid.Row="6" Text="Descritpion" />
-                    <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding Desc}" />
-
+                    <ScrollViewer VerticalAlignment="Top" Grid.Row="7"
+                                       VerticalScrollBarVisibility="Visible" VerticalScrollMode="Enabled"
+                                       AllowDrop="False" BringIntoViewOnFocusChange="True"
+                                       HorizontalScrollMode="Disabled" IsHoldingEnabled="True" >
+                        <TextBlock TextWrapping="Wrap" Foreground="Black" Grid.Row="7" Text="{Binding Desc}" ScrollViewer.VerticalScrollMode="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                    </ScrollViewer>
                 </Grid>
             </PivotItem>
             <!--<PivotItem Header="VENUE" FontSize="12" >                
